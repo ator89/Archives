@@ -3,17 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package arbolb;
+package archives;
 
 /**
  *
  * @author angel
  */
-public class BTreeNode {
-    
-    private int ClavesUsadas;
-    private MiClave clase;
-    private BTreeNode puntero;
-    private BTreeNode padre;
+public class TDA_Archivo {
     
 }

@@ -3,14 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package arbolb;
+package archives;
 
 /**
  *
  * @author angel
  */
-public class MiClave {
-    String nombre;
-    double registro; //Número índice correspondiente a la clase "nombre"
+public class ArbolB {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
     
 }

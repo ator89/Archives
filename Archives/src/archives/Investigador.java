@@ -1,5 +1,5 @@
 
-package arbolb;
+package archives;
 
 /**
  *
