@@ -352,11 +352,17 @@
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_CARRERA_modificar_activo">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btg_VER_CARR_edit_estado"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="Activo"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_CARRERA_modificar_inactivo">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btg_VER_CARR_edit_estado"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="Inactivo"/>
                           </Properties>
                         </Component>
@@ -710,6 +716,7 @@
                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                               <ComponentRef name="btg_VER_INV_agregar_estado"/>
                             </Property>
+                            <Property name="selected" type="boolean" value="true"/>
                             <Property name="text" type="java.lang.String" value="Inactivo"/>
                           </Properties>
                         </Component>
@@ -905,7 +912,7 @@
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_INV_modificar_activo">
                           <Properties>
                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                              <ComponentRef name="btg_VER_INV_agregar_estado"/>
+                              <ComponentRef name="btg_VER_INV_edit_estado"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Activo"/>
                           </Properties>
@@ -913,9 +920,8 @@
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_INV_modificar_inactivo">
                           <Properties>
                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                              <ComponentRef name="btg_VER_INV_agregar_estado"/>
+                              <ComponentRef name="btg_VER_INV_edit_estado"/>
                             </Property>
-                            <Property name="selected" type="boolean" value="true"/>
                             <Property name="text" type="java.lang.String" value="Inactivo"/>
                           </Properties>
                         </Component>
@@ -1535,21 +1541,33 @@
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PROY_modificar_iniciado">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btg_VER_PROY_edit_estado"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="Iniciado"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PROY_modificar_enviado">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btg_VER_PROY_edit_estado"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="Enviado"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PROY_modificar_publicado">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btg_VER_PROY_edit_estado"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="Publicado"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PROY_modificar_rechazado">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btg_VER_PROY_edit_estado"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="Rechazado"/>
                           </Properties>
                         </Component>
@@ -2121,11 +2139,17 @@
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PUB_modificar_publicacion">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btg_VER_PUB_edit_estado"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="Publicaci&#xf3;n"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PUB_modificar_revista">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btg_VER_PUB_edit_estado"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="Revista"/>
                           </Properties>
                         </Component>
@@ -2314,6 +2338,14 @@
     <Component class="javax.swing.ButtonGroup" name="btg_VER_PROY_agregar_estado">
     </Component>
     <Component class="javax.swing.ButtonGroup" name="btg_VER_PUB_agregar_estado">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btg_VER_CARR_edit_estado">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btg_VER_INV_edit_estado">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btg_VER_PROY_edit_estado">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btg_VER_PUB_edit_estado">
     </Component>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>

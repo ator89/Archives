@@ -197,6 +197,10 @@ public class Main extends javax.swing.JFrame {
         btg_VER_INV_agregar_estado = new javax.swing.ButtonGroup();
         btg_VER_PROY_agregar_estado = new javax.swing.ButtonGroup();
         btg_VER_PUB_agregar_estado = new javax.swing.ButtonGroup();
+        btg_VER_CARR_edit_estado = new javax.swing.ButtonGroup();
+        btg_VER_INV_edit_estado = new javax.swing.ButtonGroup();
+        btg_VER_PROY_edit_estado = new javax.swing.ButtonGroup();
+        btg_VER_PUB_edit_estado = new javax.swing.ButtonGroup();
         bt_carreras = new javax.swing.JButton();
         bt_proyectos = new javax.swing.JButton();
         bt_investigadores = new javax.swing.JButton();
@@ -321,8 +325,10 @@ public class Main extends javax.swing.JFrame {
 
         jLabel6.setText("Estado:");
 
+        btg_VER_CARR_edit_estado.add(rbt_VER_CARRERA_modificar_activo);
         rbt_VER_CARRERA_modificar_activo.setText("Activo");
 
+        btg_VER_CARR_edit_estado.add(rbt_VER_CARRERA_modificar_inactivo);
         rbt_VER_CARRERA_modificar_inactivo.setText("Inactivo");
 
         bt_VER_CARRERA_modificar_save.setText("Guardar");
@@ -544,6 +550,7 @@ public class Main extends javax.swing.JFrame {
         rbt_VER_INV_agregar_activo.setText("Activo");
 
         btg_VER_INV_agregar_estado.add(rbt_VER_INV_agregar_inactivo);
+        rbt_VER_INV_agregar_inactivo.setSelected(true);
         rbt_VER_INV_agregar_inactivo.setText("Inactivo");
 
         bt_VER_INV_agregar_add.setText("Agregar");
@@ -650,11 +657,10 @@ public class Main extends javax.swing.JFrame {
 
         jcb_VER_INV_modificar_carrera.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar..." }));
 
-        btg_VER_INV_agregar_estado.add(rbt_VER_INV_modificar_activo);
+        btg_VER_INV_edit_estado.add(rbt_VER_INV_modificar_activo);
         rbt_VER_INV_modificar_activo.setText("Activo");
 
-        btg_VER_INV_agregar_estado.add(rbt_VER_INV_modificar_inactivo);
-        rbt_VER_INV_modificar_inactivo.setSelected(true);
+        btg_VER_INV_edit_estado.add(rbt_VER_INV_modificar_inactivo);
         rbt_VER_INV_modificar_inactivo.setText("Inactivo");
 
         bt_VER_INV_modificar_save.setText("Guardar");
@@ -995,12 +1001,16 @@ public class Main extends javax.swing.JFrame {
 
         jLabel28.setText("Estado:");
 
+        btg_VER_PROY_edit_estado.add(rbt_VER_PROY_modificar_iniciado);
         rbt_VER_PROY_modificar_iniciado.setText("Iniciado");
 
+        btg_VER_PROY_edit_estado.add(rbt_VER_PROY_modificar_enviado);
         rbt_VER_PROY_modificar_enviado.setText("Enviado");
 
+        btg_VER_PROY_edit_estado.add(rbt_VER_PROY_modificar_publicado);
         rbt_VER_PROY_modificar_publicado.setText("Publicado");
 
+        btg_VER_PROY_edit_estado.add(rbt_VER_PROY_modificar_rechazado);
         rbt_VER_PROY_modificar_rechazado.setText("Rechazado");
 
         jcb_VER_PROY_modificar_carrera.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione un investigador..." }));
@@ -1327,8 +1337,10 @@ public class Main extends javax.swing.JFrame {
 
         jcb_VER_PUB_modificar_proyecto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
+        btg_VER_PUB_edit_estado.add(rbt_VER_PUB_modificar_publicacion);
         rbt_VER_PUB_modificar_publicacion.setText("Publicación");
 
+        btg_VER_PUB_edit_estado.add(rbt_VER_PUB_modificar_revista);
         rbt_VER_PUB_modificar_revista.setText("Revista");
 
         bt_VER_PUB_agregar_save.setText("Guardar");
@@ -1767,9 +1779,13 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton bt_proyectos;
     private javax.swing.JButton bt_publicaciones;
     private javax.swing.ButtonGroup btg_VER_CARR_agregar_estado;
+    private javax.swing.ButtonGroup btg_VER_CARR_edit_estado;
     private javax.swing.ButtonGroup btg_VER_INV_agregar_estado;
+    private javax.swing.ButtonGroup btg_VER_INV_edit_estado;
     private javax.swing.ButtonGroup btg_VER_PROY_agregar_estado;
+    private javax.swing.ButtonGroup btg_VER_PROY_edit_estado;
     private javax.swing.ButtonGroup btg_VER_PUB_agregar_estado;
+    private javax.swing.ButtonGroup btg_VER_PUB_edit_estado;
     private javax.swing.JDialog jDialog2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
