@@ -34,11 +34,11 @@ public class Main extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        rbt_VER_CARRERA_agregar_activo = new javax.swing.JRadioButton();
+        rbt_VER_CARRERA_agregar_inactivo = new javax.swing.JRadioButton();
+        tf_VER_CARRERA_agregar_codigo = new javax.swing.JTextField();
+        tf_VER_CARRERA_agregar_nombre = new javax.swing.JTextField();
+        bt_VER_CARRERA_agregar_add = new javax.swing.JButton();
         jPanel_VER_CARRERA_modificar = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jList3 = new javax.swing.JList<>();
@@ -46,19 +46,19 @@ public class Main extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        rbt_VER_CARRERA_modificar_activo = new javax.swing.JRadioButton();
+        rbt_VER_CARRERA_modificar_inactivo = new javax.swing.JRadioButton();
+        tf_VER_CARRERA_modificar_codigo = new javax.swing.JTextField();
+        tf_VER_CARRERA_modificar_nombre = new javax.swing.JTextField();
+        bt_VER_CARRERA_agregar_save = new javax.swing.JButton();
+        bt_VER_CARRERA_agregar_edit = new javax.swing.JButton();
         jPanel_VER_CARRERA_ver = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jtbl_VER_CARRERA_ver = new javax.swing.JTable();
         jPanel_VER_CARRERA_eliminar = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
-        jButton4 = new javax.swing.JButton();
+        jtbl_VER_CARRERA_eliminar = new javax.swing.JTable();
+        bt_VER_CARRERA_agregar_delete = new javax.swing.JButton();
         jd_investigadores = new javax.swing.JDialog();
         jd_proyectos = new javax.swing.JDialog();
         jd_publicaciones = new javax.swing.JDialog();
@@ -92,14 +92,14 @@ public class Main extends javax.swing.JFrame {
 
         jLabel3.setText("Estado:");
 
-        btg_VER_estado.add(jRadioButton1);
-        jRadioButton1.setText("Activo");
+        btg_VER_estado.add(rbt_VER_CARRERA_agregar_activo);
+        rbt_VER_CARRERA_agregar_activo.setText("Activo");
 
-        btg_VER_estado.add(jRadioButton2);
-        jRadioButton2.setSelected(true);
-        jRadioButton2.setText("Inactivo");
+        btg_VER_estado.add(rbt_VER_CARRERA_agregar_inactivo);
+        rbt_VER_CARRERA_agregar_inactivo.setSelected(true);
+        rbt_VER_CARRERA_agregar_inactivo.setText("Inactivo");
 
-        jButton1.setText("Agregar");
+        bt_VER_CARRERA_agregar_add.setText("Agregar");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -108,22 +108,22 @@ public class Main extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
+                    .addComponent(bt_VER_CARRERA_agregar_add)
                     .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(jLabel2)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField2))
+                            .addComponent(tf_VER_CARRERA_agregar_nombre))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(jLabel1)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(tf_VER_CARRERA_agregar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel6Layout.createSequentialGroup()
                             .addComponent(jLabel3)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jRadioButton2)
-                                .addComponent(jRadioButton1)))))
+                                .addComponent(rbt_VER_CARRERA_agregar_inactivo)
+                                .addComponent(rbt_VER_CARRERA_agregar_activo)))))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -132,19 +132,19 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tf_VER_CARRERA_agregar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tf_VER_CARRERA_agregar_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jRadioButton1))
+                    .addComponent(rbt_VER_CARRERA_agregar_activo))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton2)
+                .addComponent(rbt_VER_CARRERA_agregar_inactivo)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(bt_VER_CARRERA_agregar_add)
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
@@ -184,13 +184,13 @@ public class Main extends javax.swing.JFrame {
 
         jLabel6.setText("Estado:");
 
-        jRadioButton3.setText("Activo");
+        rbt_VER_CARRERA_modificar_activo.setText("Activo");
 
-        jRadioButton4.setText("Inactivo");
+        rbt_VER_CARRERA_modificar_inactivo.setText("Inactivo");
 
-        jButton2.setText("Guardar");
+        bt_VER_CARRERA_agregar_save.setText("Guardar");
 
-        jButton3.setText("Editar");
+        bt_VER_CARRERA_agregar_edit.setText("Editar");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -200,24 +200,24 @@ public class Main extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(jButton3)
+                        .addComponent(bt_VER_CARRERA_agregar_edit)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2))
+                        .addComponent(bt_VER_CARRERA_agregar_save))
                     .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(jPanel7Layout.createSequentialGroup()
                             .addComponent(jLabel5)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField4))
+                            .addComponent(tf_VER_CARRERA_modificar_nombre))
                         .addGroup(jPanel7Layout.createSequentialGroup()
                             .addComponent(jLabel4)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(tf_VER_CARRERA_modificar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel7Layout.createSequentialGroup()
                             .addComponent(jLabel6)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jRadioButton4)
-                                .addComponent(jRadioButton3)))))
+                                .addComponent(rbt_VER_CARRERA_modificar_inactivo)
+                                .addComponent(rbt_VER_CARRERA_modificar_activo)))))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
@@ -226,21 +226,21 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tf_VER_CARRERA_modificar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tf_VER_CARRERA_modificar_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jRadioButton3))
+                    .addComponent(rbt_VER_CARRERA_modificar_activo))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton4)
+                .addComponent(rbt_VER_CARRERA_modificar_inactivo)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(bt_VER_CARRERA_agregar_save)
+                    .addComponent(bt_VER_CARRERA_agregar_edit))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
@@ -267,7 +267,7 @@ public class Main extends javax.swing.JFrame {
 
         jtp_VER_carreras.addTab("Modificar", jPanel_VER_CARRERA_modificar);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jtbl_VER_CARRERA_ver.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -293,7 +293,7 @@ public class Main extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane4.setViewportView(jTable1);
+        jScrollPane4.setViewportView(jtbl_VER_CARRERA_ver);
 
         javax.swing.GroupLayout jPanel_VER_CARRERA_verLayout = new javax.swing.GroupLayout(jPanel_VER_CARRERA_ver);
         jPanel_VER_CARRERA_ver.setLayout(jPanel_VER_CARRERA_verLayout);
@@ -314,7 +314,7 @@ public class Main extends javax.swing.JFrame {
 
         jtp_VER_carreras.addTab("Ver", jPanel_VER_CARRERA_ver);
 
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+        jtbl_VER_CARRERA_eliminar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -340,9 +340,9 @@ public class Main extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane5.setViewportView(jTable2);
+        jScrollPane5.setViewportView(jtbl_VER_CARRERA_eliminar);
 
-        jButton4.setText("Eliminar");
+        bt_VER_CARRERA_agregar_delete.setText("Eliminar");
 
         javax.swing.GroupLayout jPanel_VER_CARRERA_eliminarLayout = new javax.swing.GroupLayout(jPanel_VER_CARRERA_eliminar);
         jPanel_VER_CARRERA_eliminar.setLayout(jPanel_VER_CARRERA_eliminarLayout);
@@ -351,7 +351,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(jPanel_VER_CARRERA_eliminarLayout.createSequentialGroup()
                 .addGap(82, 82, 82)
                 .addGroup(jPanel_VER_CARRERA_eliminarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton4)
+                    .addComponent(bt_VER_CARRERA_agregar_delete)
                     .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(114, Short.MAX_VALUE))
         );
@@ -361,7 +361,7 @@ public class Main extends javax.swing.JFrame {
                 .addGap(56, 56, 56)
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton4)
+                .addComponent(bt_VER_CARRERA_agregar_delete)
                 .addContainerGap(34, Short.MAX_VALUE))
         );
 
@@ -575,11 +575,11 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bt_VER_CARRERA_agregar_add;
+    private javax.swing.JButton bt_VER_CARRERA_agregar_delete;
+    private javax.swing.JButton bt_VER_CARRERA_agregar_edit;
+    private javax.swing.JButton bt_VER_CARRERA_agregar_save;
     private javax.swing.ButtonGroup btg_VER_estado;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JDialog jDialog2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -597,21 +597,11 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel_VER_CARRERA_modificar;
     private javax.swing.JPanel jPanel_VER_CARRERA_ver;
     private javax.swing.JPanel jPanel_VER_carreras;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JPopupMenu.Separator jSeparator1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTable jTable2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JDialog jd_carreras;
     private javax.swing.JDialog jd_investigadores;
     private javax.swing.JDialog jd_proyectos;
@@ -626,6 +616,16 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem jmi_VER_investigadores;
     private javax.swing.JMenuItem jmi_VER_proyectos;
     private javax.swing.JMenuItem jmi_VER_publicaciones;
+    private javax.swing.JTable jtbl_VER_CARRERA_eliminar;
+    private javax.swing.JTable jtbl_VER_CARRERA_ver;
     private javax.swing.JTabbedPane jtp_VER_carreras;
+    private javax.swing.JRadioButton rbt_VER_CARRERA_agregar_activo;
+    private javax.swing.JRadioButton rbt_VER_CARRERA_agregar_inactivo;
+    private javax.swing.JRadioButton rbt_VER_CARRERA_modificar_activo;
+    private javax.swing.JRadioButton rbt_VER_CARRERA_modificar_inactivo;
+    private javax.swing.JTextField tf_VER_CARRERA_agregar_codigo;
+    private javax.swing.JTextField tf_VER_CARRERA_agregar_nombre;
+    private javax.swing.JTextField tf_VER_CARRERA_modificar_codigo;
+    private javax.swing.JTextField tf_VER_CARRERA_modificar_nombre;
     // End of variables declaration//GEN-END:variables
 }
