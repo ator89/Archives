@@ -162,12 +162,12 @@ public class Main extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        jComboBox5 = new javax.swing.JComboBox<>();
+        tf_VER_PUB_agregar_codigo = new javax.swing.JTextField();
+        jcb_VER_PUB_agregar_proyecto = new javax.swing.JComboBox<>();
         jSpinner7 = new javax.swing.JSpinner();
-        jRadioButton13 = new javax.swing.JRadioButton();
-        jRadioButton14 = new javax.swing.JRadioButton();
-        jButton9 = new javax.swing.JButton();
+        rbt_VER_PUB_agregar_publicacion = new javax.swing.JRadioButton();
+        rbt_VER_PUB_agregar_revista = new javax.swing.JRadioButton();
+        bt_VER_PUB_agregar_add = new javax.swing.JButton();
         jScrollPane12 = new javax.swing.JScrollPane();
         jList5 = new javax.swing.JList<>();
         jPanel_VER_PUB_edit = new javax.swing.JPanel();
@@ -176,15 +176,15 @@ public class Main extends javax.swing.JFrame {
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jComboBox6 = new javax.swing.JComboBox<>();
+        tf_VER_PUB_modificar_codigo = new javax.swing.JTextField();
+        jcb_VER_PUB_modificar_proyecto = new javax.swing.JComboBox<>();
         jSpinner8 = new javax.swing.JSpinner();
-        jRadioButton15 = new javax.swing.JRadioButton();
-        jRadioButton16 = new javax.swing.JRadioButton();
-        jButton10 = new javax.swing.JButton();
+        rbt_VER_PUB_modificar_publicacion = new javax.swing.JRadioButton();
+        rbt_VER_PUB_modificar_revista = new javax.swing.JRadioButton();
+        bt_VER_PUB_agregar_save = new javax.swing.JButton();
         jScrollPane13 = new javax.swing.JScrollPane();
         jList6 = new javax.swing.JList<>();
-        jButton11 = new javax.swing.JButton();
+        bt_VER_PUB_agregar_edit = new javax.swing.JButton();
         jPanel_VER_PUB_view = new javax.swing.JPanel();
         jScrollPane14 = new javax.swing.JScrollPane();
         jtbl_VER_PUB_listar = new javax.swing.JTable();
@@ -866,12 +866,16 @@ public class Main extends javax.swing.JFrame {
 
         jLabel22.setText("Estado:");
 
+        btg_VER_PROY_agregar_estado.add(rbt_VER_PROY_agregar_iniciado);
         rbt_VER_PROY_agregar_iniciado.setText("Iniciado");
 
+        btg_VER_PROY_agregar_estado.add(rbt_VER_PROY_agregar_enviado);
         rbt_VER_PROY_agregar_enviado.setText("Enviado");
 
+        btg_VER_PROY_agregar_estado.add(rbt_VER_PROY_agregar_publicado);
         rbt_VER_PROY_agregar_publicado.setText("Publicado");
 
+        btg_VER_PROY_agregar_estado.add(rbt_VER_PROY_agregar_rechazado);
         rbt_VER_PROY_agregar_rechazado.setText("Rechazado");
 
         jcb_VER_PROY_agregar_carrera.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione un investigador..." }));
@@ -1221,13 +1225,15 @@ public class Main extends javax.swing.JFrame {
 
         jLabel32.setText("Tipo:");
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jcb_VER_PUB_agregar_proyecto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jRadioButton13.setText("Publicación");
+        btg_VER_PUB_agregar_estado.add(rbt_VER_PUB_agregar_publicacion);
+        rbt_VER_PUB_agregar_publicacion.setText("Publicación");
 
-        jRadioButton14.setText("Revista");
+        btg_VER_PUB_agregar_estado.add(rbt_VER_PUB_agregar_revista);
+        rbt_VER_PUB_agregar_revista.setText("Revista");
 
-        jButton9.setText("Guardar");
+        bt_VER_PUB_agregar_add.setText("Guardar");
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
@@ -1236,7 +1242,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(jPanel17Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton9)
+                    .addComponent(bt_VER_PUB_agregar_add)
                     .addGroup(jPanel17Layout.createSequentialGroup()
                         .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel32, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -1245,14 +1251,14 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(jLabel29, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_VER_PUB_agregar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jcb_VER_PUB_agregar_proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jSpinner7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel17Layout.createSequentialGroup()
                                 .addGap(6, 6, 6)
                                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton14)
-                                    .addComponent(jRadioButton13))))))
+                                    .addComponent(rbt_VER_PUB_agregar_revista)
+                                    .addComponent(rbt_VER_PUB_agregar_publicacion))))))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
         jPanel17Layout.setVerticalGroup(
@@ -1261,11 +1267,11 @@ public class Main extends javax.swing.JFrame {
                 .addGap(17, 17, 17)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel29)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tf_VER_PUB_agregar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel30)
-                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jcb_VER_PUB_agregar_proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel31)
@@ -1273,11 +1279,11 @@ public class Main extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel32)
-                    .addComponent(jRadioButton13))
+                    .addComponent(rbt_VER_PUB_agregar_publicacion))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jRadioButton14)
+                .addComponent(rbt_VER_PUB_agregar_revista)
                 .addGap(18, 18, 18)
-                .addComponent(jButton9)
+                .addComponent(bt_VER_PUB_agregar_add)
                 .addContainerGap(11, Short.MAX_VALUE))
         );
 
@@ -1319,13 +1325,13 @@ public class Main extends javax.swing.JFrame {
 
         jLabel36.setText("Tipo:");
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jcb_VER_PUB_modificar_proyecto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jRadioButton15.setText("Publicación");
+        rbt_VER_PUB_modificar_publicacion.setText("Publicación");
 
-        jRadioButton16.setText("Revista");
+        rbt_VER_PUB_modificar_revista.setText("Revista");
 
-        jButton10.setText("Guardar");
+        bt_VER_PUB_agregar_save.setText("Guardar");
 
         javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
         jPanel18.setLayout(jPanel18Layout);
@@ -1334,7 +1340,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(jPanel18Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton10)
+                    .addComponent(bt_VER_PUB_agregar_save)
                     .addGroup(jPanel18Layout.createSequentialGroup()
                         .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel36, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -1343,14 +1349,14 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(jLabel33, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tf_VER_PUB_modificar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jcb_VER_PUB_modificar_proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jSpinner8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel18Layout.createSequentialGroup()
                                 .addGap(6, 6, 6)
                                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton16)
-                                    .addComponent(jRadioButton15))))))
+                                    .addComponent(rbt_VER_PUB_modificar_revista)
+                                    .addComponent(rbt_VER_PUB_modificar_publicacion))))))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
         jPanel18Layout.setVerticalGroup(
@@ -1359,11 +1365,11 @@ public class Main extends javax.swing.JFrame {
                 .addGap(17, 17, 17)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel33)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tf_VER_PUB_modificar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel34)
-                    .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jcb_VER_PUB_modificar_proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel35)
@@ -1371,11 +1377,11 @@ public class Main extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel36)
-                    .addComponent(jRadioButton15))
+                    .addComponent(rbt_VER_PUB_modificar_publicacion))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jRadioButton16)
+                .addComponent(rbt_VER_PUB_modificar_revista)
                 .addGap(18, 18, 18)
-                .addComponent(jButton10)
+                .addComponent(bt_VER_PUB_agregar_save)
                 .addContainerGap(11, Short.MAX_VALUE))
         );
 
@@ -1386,7 +1392,7 @@ public class Main extends javax.swing.JFrame {
         });
         jScrollPane13.setViewportView(jList6);
 
-        jButton11.setText("Editar");
+        bt_VER_PUB_agregar_edit.setText("Editar");
 
         javax.swing.GroupLayout jPanel_VER_PUB_editLayout = new javax.swing.GroupLayout(jPanel_VER_PUB_edit);
         jPanel_VER_PUB_edit.setLayout(jPanel_VER_PUB_editLayout);
@@ -1401,7 +1407,7 @@ public class Main extends javax.swing.JFrame {
                         .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel_VER_PUB_editLayout.createSequentialGroup()
                         .addGap(105, 105, 105)
-                        .addComponent(jButton11)))
+                        .addComponent(bt_VER_PUB_agregar_edit)))
                 .addContainerGap(93, Short.MAX_VALUE))
         );
         jPanel_VER_PUB_editLayout.setVerticalGroup(
@@ -1412,7 +1418,7 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(jPanel_VER_PUB_editLayout.createSequentialGroup()
                         .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton11))
+                        .addComponent(bt_VER_PUB_agregar_edit))
                     .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(103, Short.MAX_VALUE))
         );
@@ -1752,6 +1758,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton bt_VER_PROY_borrar_delete;
     private javax.swing.JButton bt_VER_PROY_modificar_edit;
     private javax.swing.JButton bt_VER_PROY_modificar_save;
+    private javax.swing.JButton bt_VER_PUB_agregar_add;
+    private javax.swing.JButton bt_VER_PUB_agregar_edit;
+    private javax.swing.JButton bt_VER_PUB_agregar_save;
     private javax.swing.JButton bt_VER_PUB_borrar_delete;
     private javax.swing.JButton bt_carreras;
     private javax.swing.JButton bt_investigadores;
@@ -1761,11 +1770,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.ButtonGroup btg_VER_INV_agregar_estado;
     private javax.swing.ButtonGroup btg_VER_PROY_agregar_estado;
     private javax.swing.ButtonGroup btg_VER_PUB_agregar_estado;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JComboBox<String> jComboBox5;
-    private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JDialog jDialog2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1839,10 +1843,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel_VER_investigadores;
     private javax.swing.JPanel jPanel_VER_proyectos;
     private javax.swing.JPanel jPanel_VER_publicaciones;
-    private javax.swing.JRadioButton jRadioButton13;
-    private javax.swing.JRadioButton jRadioButton14;
-    private javax.swing.JRadioButton jRadioButton15;
-    private javax.swing.JRadioButton jRadioButton16;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
@@ -1868,13 +1868,13 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner6;
     private javax.swing.JSpinner jSpinner7;
     private javax.swing.JSpinner jSpinner8;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField9;
     private javax.swing.JTree jTree1;
     private javax.swing.JComboBox<String> jcb_VER_INV_agregar_carrera;
     private javax.swing.JComboBox<String> jcb_VER_INV_modificar_carrera;
     private javax.swing.JComboBox<String> jcb_VER_PROY_agregar_carrera;
     private javax.swing.JComboBox<String> jcb_VER_PROY_modificar_carrera;
+    private javax.swing.JComboBox<String> jcb_VER_PUB_agregar_proyecto;
+    private javax.swing.JComboBox<String> jcb_VER_PUB_modificar_proyecto;
     private javax.swing.JDialog jd_carreras;
     private javax.swing.JDialog jd_investigadores;
     private javax.swing.JDialog jd_proyectos;
@@ -1917,6 +1917,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JRadioButton rbt_VER_PROY_modificar_iniciado;
     private javax.swing.JRadioButton rbt_VER_PROY_modificar_publicado;
     private javax.swing.JRadioButton rbt_VER_PROY_modificar_rechazado;
+    private javax.swing.JRadioButton rbt_VER_PUB_agregar_publicacion;
+    private javax.swing.JRadioButton rbt_VER_PUB_agregar_revista;
+    private javax.swing.JRadioButton rbt_VER_PUB_modificar_publicacion;
+    private javax.swing.JRadioButton rbt_VER_PUB_modificar_revista;
     private javax.swing.JTextField tf_VER_CARRERA_agregar_codigo;
     private javax.swing.JTextField tf_VER_CARRERA_agregar_nombre;
     private javax.swing.JTextField tf_VER_CARRERA_modificar_codigo;
@@ -1929,5 +1933,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField tf_VER_PROY_agregar_tema;
     private javax.swing.JTextField tf_VER_PROY_modificar_codigo;
     private javax.swing.JTextField tf_VER_PROY_modificar_tema;
+    private javax.swing.JTextField tf_VER_PUB_agregar_codigo;
+    private javax.swing.JTextField tf_VER_PUB_modificar_codigo;
     // End of variables declaration//GEN-END:variables
 }

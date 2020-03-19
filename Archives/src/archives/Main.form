@@ -1280,21 +1280,33 @@
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PROY_agregar_iniciado">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btg_VER_PROY_agregar_estado"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="Iniciado"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PROY_agregar_enviado">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btg_VER_PROY_agregar_estado"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="Enviado"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PROY_agregar_publicado">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btg_VER_PROY_agregar_estado"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="Publicado"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PROY_agregar_rechazado">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btg_VER_PROY_agregar_estado"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="Rechazado"/>
                           </Properties>
                         </Component>
@@ -1804,7 +1816,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jButton9" min="-2" max="-2" attributes="0"/>
+                                      <Component id="bt_VER_PUB_agregar_add" min="-2" max="-2" attributes="0"/>
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="jLabel32" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -1814,14 +1826,14 @@
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jTextField9" min="-2" pref="230" max="-2" attributes="0"/>
-                                              <Component id="jComboBox5" min="-2" max="-2" attributes="0"/>
+                                              <Component id="tf_VER_PUB_agregar_codigo" min="-2" pref="230" max="-2" attributes="0"/>
+                                              <Component id="jcb_VER_PUB_agregar_proyecto" min="-2" max="-2" attributes="0"/>
                                               <Component id="jSpinner7" min="-2" max="-2" attributes="0"/>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jRadioButton14" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="jRadioButton13" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="rbt_VER_PUB_agregar_revista" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="rbt_VER_PUB_agregar_publicacion" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                           </Group>
@@ -1837,12 +1849,12 @@
                                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jTextField9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="tf_VER_PUB_agregar_codigo" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jComboBox5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jcb_VER_PUB_agregar_proyecto" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -1852,12 +1864,12 @@
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel32" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbt_VER_PUB_agregar_publicacion" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton14" min="-2" max="-2" attributes="0"/>
+                                  <Component id="rbt_VER_PUB_agregar_revista" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jButton9" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bt_VER_PUB_agregar_add" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace pref="11" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -1884,9 +1896,9 @@
                             <Property name="text" type="java.lang.String" value="Tipo:"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="jTextField9">
+                        <Component class="javax.swing.JTextField" name="tf_VER_PUB_agregar_codigo">
                         </Component>
-                        <Component class="javax.swing.JComboBox" name="jComboBox5">
+                        <Component class="javax.swing.JComboBox" name="jcb_VER_PUB_agregar_proyecto">
                           <Properties>
                             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                               <StringArray count="4">
@@ -1903,17 +1915,23 @@
                         </Component>
                         <Component class="javax.swing.JSpinner" name="jSpinner7">
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="jRadioButton13">
+                        <Component class="javax.swing.JRadioButton" name="rbt_VER_PUB_agregar_publicacion">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btg_VER_PUB_agregar_estado"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="Publicaci&#xf3;n"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="jRadioButton14">
+                        <Component class="javax.swing.JRadioButton" name="rbt_VER_PUB_agregar_revista">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btg_VER_PUB_agregar_estado"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="Revista"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="jButton9">
+                        <Component class="javax.swing.JButton" name="bt_VER_PUB_agregar_add">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Guardar"/>
                           </Properties>
@@ -1969,7 +1987,7 @@
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
-                                      <Component id="jButton11" min="-2" max="-2" attributes="0"/>
+                                      <Component id="bt_VER_PUB_agregar_edit" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace pref="93" max="32767" attributes="0"/>
@@ -1984,7 +2002,7 @@
                                   <Group type="102" attributes="0">
                                       <Component id="jScrollPane13" min="-2" pref="200" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jButton11" min="-2" max="-2" attributes="0"/>
+                                      <Component id="bt_VER_PUB_agregar_edit" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jPanel18" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -2002,7 +2020,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jButton10" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="bt_VER_PUB_agregar_save" alignment="1" min="-2" max="-2" attributes="0"/>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="jLabel36" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -2012,14 +2030,14 @@
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jTextField10" alignment="0" min="-2" pref="230" max="-2" attributes="0"/>
-                                              <Component id="jComboBox6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="tf_VER_PUB_modificar_codigo" alignment="0" min="-2" pref="230" max="-2" attributes="0"/>
+                                              <Component id="jcb_VER_PUB_modificar_proyecto" alignment="0" min="-2" max="-2" attributes="0"/>
                                               <Component id="jSpinner8" alignment="0" min="-2" max="-2" attributes="0"/>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jRadioButton16" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      <Component id="jRadioButton15" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="rbt_VER_PUB_modificar_revista" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="rbt_VER_PUB_modificar_publicacion" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                           </Group>
@@ -2035,12 +2053,12 @@
                                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel33" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jTextField10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="tf_VER_PUB_modificar_codigo" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jComboBox6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jcb_VER_PUB_modificar_proyecto" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -2050,12 +2068,12 @@
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel36" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jRadioButton15" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbt_VER_PUB_modificar_publicacion" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jRadioButton16" min="-2" max="-2" attributes="0"/>
+                                  <Component id="rbt_VER_PUB_modificar_revista" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jButton10" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bt_VER_PUB_agregar_save" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace pref="11" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -2082,9 +2100,9 @@
                             <Property name="text" type="java.lang.String" value="Tipo:"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="jTextField10">
+                        <Component class="javax.swing.JTextField" name="tf_VER_PUB_modificar_codigo">
                         </Component>
-                        <Component class="javax.swing.JComboBox" name="jComboBox6">
+                        <Component class="javax.swing.JComboBox" name="jcb_VER_PUB_modificar_proyecto">
                           <Properties>
                             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                               <StringArray count="4">
@@ -2101,17 +2119,17 @@
                         </Component>
                         <Component class="javax.swing.JSpinner" name="jSpinner8">
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="jRadioButton15">
+                        <Component class="javax.swing.JRadioButton" name="rbt_VER_PUB_modificar_publicacion">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Publicaci&#xf3;n"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="jRadioButton16">
+                        <Component class="javax.swing.JRadioButton" name="rbt_VER_PUB_modificar_revista">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Revista"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="jButton10">
+                        <Component class="javax.swing.JButton" name="bt_VER_PUB_agregar_save">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Guardar"/>
                           </Properties>
@@ -2143,7 +2161,7 @@
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Component class="javax.swing.JButton" name="jButton11">
+                    <Component class="javax.swing.JButton" name="bt_VER_PUB_agregar_edit">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Editar"/>
                       </Properties>
