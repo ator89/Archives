@@ -60,10 +60,20 @@ public class Main extends javax.swing.JFrame {
         jtbl_VER_CARRERA_eliminar = new javax.swing.JTable();
         bt_VER_CARRERA_agregar_delete = new javax.swing.JButton();
         jd_investigadores = new javax.swing.JDialog();
+        jPanel_VER_investigadores = new javax.swing.JPanel();
+        jtp_VER_investigadores = new javax.swing.JTabbedPane();
+        jPanel_VER_INVT_add = new javax.swing.JPanel();
+        jPanel_VER_INVT_edit = new javax.swing.JPanel();
+        jPanel_VER_INVT_view = new javax.swing.JPanel();
+        jPanel_VER_INVT_delete = new javax.swing.JPanel();
         jd_proyectos = new javax.swing.JDialog();
         jd_publicaciones = new javax.swing.JDialog();
         jDialog2 = new javax.swing.JDialog();
         btg_VER_estado = new javax.swing.ButtonGroup();
+        bt_carreras = new javax.swing.JButton();
+        bt_proyectos = new javax.swing.JButton();
+        bt_investigadores = new javax.swing.JButton();
+        bt_publicaciones = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jm_FILE = new javax.swing.JMenu();
         jmi_FILE_abrir = new javax.swing.JMenuItem();
@@ -391,15 +401,78 @@ public class Main extends javax.swing.JFrame {
 
         jd_investigadores.setTitle("Investigadores");
 
+        javax.swing.GroupLayout jPanel_VER_INVT_addLayout = new javax.swing.GroupLayout(jPanel_VER_INVT_add);
+        jPanel_VER_INVT_add.setLayout(jPanel_VER_INVT_addLayout);
+        jPanel_VER_INVT_addLayout.setHorizontalGroup(
+            jPanel_VER_INVT_addLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 641, Short.MAX_VALUE)
+        );
+        jPanel_VER_INVT_addLayout.setVerticalGroup(
+            jPanel_VER_INVT_addLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 415, Short.MAX_VALUE)
+        );
+
+        jtp_VER_investigadores.addTab("Agregar", jPanel_VER_INVT_add);
+
+        javax.swing.GroupLayout jPanel_VER_INVT_editLayout = new javax.swing.GroupLayout(jPanel_VER_INVT_edit);
+        jPanel_VER_INVT_edit.setLayout(jPanel_VER_INVT_editLayout);
+        jPanel_VER_INVT_editLayout.setHorizontalGroup(
+            jPanel_VER_INVT_editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 641, Short.MAX_VALUE)
+        );
+        jPanel_VER_INVT_editLayout.setVerticalGroup(
+            jPanel_VER_INVT_editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 415, Short.MAX_VALUE)
+        );
+
+        jtp_VER_investigadores.addTab("Modificar", jPanel_VER_INVT_edit);
+
+        javax.swing.GroupLayout jPanel_VER_INVT_viewLayout = new javax.swing.GroupLayout(jPanel_VER_INVT_view);
+        jPanel_VER_INVT_view.setLayout(jPanel_VER_INVT_viewLayout);
+        jPanel_VER_INVT_viewLayout.setHorizontalGroup(
+            jPanel_VER_INVT_viewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 641, Short.MAX_VALUE)
+        );
+        jPanel_VER_INVT_viewLayout.setVerticalGroup(
+            jPanel_VER_INVT_viewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 415, Short.MAX_VALUE)
+        );
+
+        jtp_VER_investigadores.addTab("Listar", jPanel_VER_INVT_view);
+
+        javax.swing.GroupLayout jPanel_VER_INVT_deleteLayout = new javax.swing.GroupLayout(jPanel_VER_INVT_delete);
+        jPanel_VER_INVT_delete.setLayout(jPanel_VER_INVT_deleteLayout);
+        jPanel_VER_INVT_deleteLayout.setHorizontalGroup(
+            jPanel_VER_INVT_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 641, Short.MAX_VALUE)
+        );
+        jPanel_VER_INVT_deleteLayout.setVerticalGroup(
+            jPanel_VER_INVT_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 415, Short.MAX_VALUE)
+        );
+
+        jtp_VER_investigadores.addTab("Delete", jPanel_VER_INVT_delete);
+
+        javax.swing.GroupLayout jPanel_VER_investigadoresLayout = new javax.swing.GroupLayout(jPanel_VER_investigadores);
+        jPanel_VER_investigadores.setLayout(jPanel_VER_investigadoresLayout);
+        jPanel_VER_investigadoresLayout.setHorizontalGroup(
+            jPanel_VER_investigadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jtp_VER_investigadores)
+        );
+        jPanel_VER_investigadoresLayout.setVerticalGroup(
+            jPanel_VER_investigadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jtp_VER_investigadores)
+        );
+
         javax.swing.GroupLayout jd_investigadoresLayout = new javax.swing.GroupLayout(jd_investigadores.getContentPane());
         jd_investigadores.getContentPane().setLayout(jd_investigadoresLayout);
         jd_investigadoresLayout.setHorizontalGroup(
             jd_investigadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel_VER_investigadores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jd_investigadoresLayout.setVerticalGroup(
             jd_investigadoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel_VER_investigadores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jd_proyectos.setTitle("Proyectos");
@@ -441,6 +514,34 @@ public class Main extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Base Datos de Investigadores");
+
+        bt_carreras.setText("Carreras");
+        bt_carreras.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt_carrerasMouseClicked(evt);
+            }
+        });
+
+        bt_proyectos.setText("Proyectos");
+        bt_proyectos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt_proyectosMouseClicked(evt);
+            }
+        });
+
+        bt_investigadores.setText("Investigadores");
+        bt_investigadores.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt_investigadoresMouseClicked(evt);
+            }
+        });
+
+        bt_publicaciones.setText("Publicaciones");
+        bt_publicaciones.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bt_publicacionesMouseClicked(evt);
+            }
+        });
 
         jm_FILE.setText("File");
 
@@ -501,16 +602,33 @@ public class Main extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 673, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(210, 210, 210)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(bt_publicaciones)
+                    .addComponent(bt_carreras)
+                    .addComponent(bt_investigadores)
+                    .addComponent(bt_proyectos))
+                .addContainerGap(327, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 431, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(105, 105, 105)
+                .addComponent(bt_carreras)
+                .addGap(18, 18, 18)
+                .addComponent(bt_investigadores)
+                .addGap(18, 18, 18)
+                .addComponent(bt_proyectos)
+                .addGap(18, 18, 18)
+                .addComponent(bt_publicaciones)
+                .addContainerGap(156, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    //acción de menú en menú principal para abrir dialog de PROYECTOS
     private void jmi_VER_proyectosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmi_VER_proyectosActionPerformed
         jd_proyectos.pack();
         jd_proyectos.setModal(true);
@@ -518,6 +636,7 @@ public class Main extends javax.swing.JFrame {
         jd_proyectos.setVisible(true);
     }//GEN-LAST:event_jmi_VER_proyectosActionPerformed
 
+    //acción de menú en menú principal para abrir dialog de PUBLICACIONES
     private void jmi_VER_publicacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmi_VER_publicacionesActionPerformed
         jd_publicaciones.pack();
         jd_publicaciones.setModal(true);
@@ -525,6 +644,7 @@ public class Main extends javax.swing.JFrame {
         jd_publicaciones.setVisible(true);
     }//GEN-LAST:event_jmi_VER_publicacionesActionPerformed
 
+    //acción de menú en menú principal para abrir dialog de CARRERAS
     private void jmi_VER_carrerasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmi_VER_carrerasActionPerformed
         jd_carreras.pack();
         jd_carreras.setModal(true);
@@ -532,12 +652,45 @@ public class Main extends javax.swing.JFrame {
         jd_carreras.setVisible(true);
     }//GEN-LAST:event_jmi_VER_carrerasActionPerformed
 
+    //acción de menú en menú principal para abrir dialog de INVESTIGADORES
     private void jmi_VER_investigadoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmi_VER_investigadoresActionPerformed
         jd_investigadores.pack();
         jd_investigadores.setModal(true);
         jd_investigadores.setLocationRelativeTo(this);
         jd_investigadores.setVisible(true);
     }//GEN-LAST:event_jmi_VER_investigadoresActionPerformed
+
+    //acción de botón en ventana principal para abrir dialog de CARRERAS
+    private void bt_carrerasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_carrerasMouseClicked
+        jd_carreras.pack();
+        jd_carreras.setModal(true);
+        jd_carreras.setLocationRelativeTo(this);
+        jd_carreras.setVisible(true);
+    }//GEN-LAST:event_bt_carrerasMouseClicked
+
+    //acción de botón en ventana principal para abrir dialog de INVESTIGADORES
+    private void bt_investigadoresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_investigadoresMouseClicked
+        jd_investigadores.pack();
+        jd_investigadores.setModal(true);
+        jd_investigadores.setLocationRelativeTo(this);
+        jd_investigadores.setVisible(true);
+    }//GEN-LAST:event_bt_investigadoresMouseClicked
+
+    //acción de botón en ventana principal para abrir dialog de PROYECTOS
+    private void bt_proyectosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_proyectosMouseClicked
+        jd_proyectos.pack();
+        jd_proyectos.setModal(true);
+        jd_proyectos.setLocationRelativeTo(this);
+        jd_proyectos.setVisible(true);
+    }//GEN-LAST:event_bt_proyectosMouseClicked
+
+    //acción de botón en ventana principal para abrir dialog de PUBLICACIONES
+    private void bt_publicacionesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_publicacionesMouseClicked
+        jd_publicaciones.pack();
+        jd_publicaciones.setModal(true);
+        jd_publicaciones.setLocationRelativeTo(this);
+        jd_publicaciones.setVisible(true);
+    }//GEN-LAST:event_bt_publicacionesMouseClicked
 
     /**
      * @param args the command line arguments
@@ -579,6 +732,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton bt_VER_CARRERA_agregar_delete;
     private javax.swing.JButton bt_VER_CARRERA_agregar_edit;
     private javax.swing.JButton bt_VER_CARRERA_agregar_save;
+    private javax.swing.JButton bt_carreras;
+    private javax.swing.JButton bt_investigadores;
+    private javax.swing.JButton bt_proyectos;
+    private javax.swing.JButton bt_publicaciones;
     private javax.swing.ButtonGroup btg_VER_estado;
     private javax.swing.JDialog jDialog2;
     private javax.swing.JLabel jLabel1;
@@ -596,7 +753,12 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel_VER_CARRERA_eliminar;
     private javax.swing.JPanel jPanel_VER_CARRERA_modificar;
     private javax.swing.JPanel jPanel_VER_CARRERA_ver;
+    private javax.swing.JPanel jPanel_VER_INVT_add;
+    private javax.swing.JPanel jPanel_VER_INVT_delete;
+    private javax.swing.JPanel jPanel_VER_INVT_edit;
+    private javax.swing.JPanel jPanel_VER_INVT_view;
     private javax.swing.JPanel jPanel_VER_carreras;
+    private javax.swing.JPanel jPanel_VER_investigadores;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
@@ -619,6 +781,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTable jtbl_VER_CARRERA_eliminar;
     private javax.swing.JTable jtbl_VER_CARRERA_ver;
     private javax.swing.JTabbedPane jtp_VER_carreras;
+    private javax.swing.JTabbedPane jtp_VER_investigadores;
     private javax.swing.JRadioButton rbt_VER_CARRERA_agregar_activo;
     private javax.swing.JRadioButton rbt_VER_CARRERA_agregar_inactivo;
     private javax.swing.JRadioButton rbt_VER_CARRERA_modificar_activo;
