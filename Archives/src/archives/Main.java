@@ -25,32 +25,73 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         jd_carreras = new javax.swing.JDialog();
+        jPanel1 = new javax.swing.JPanel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
         jd_investigadores = new javax.swing.JDialog();
         jd_proyectos = new javax.swing.JDialog();
         jd_publicaciones = new javax.swing.JDialog();
         jDialog2 = new javax.swing.JDialog();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        jm_FILE = new javax.swing.JMenu();
         jmi_FILE_abrir = new javax.swing.JMenuItem();
         jmi_FILE_guardar = new javax.swing.JMenuItem();
         jmi_FILE_close = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jmi_FILE_exit = new javax.swing.JMenuItem();
-        jmi_VER_carreras = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
+        jm_VER = new javax.swing.JMenu();
+        jmi_VER_carreras = new javax.swing.JMenuItem();
         jmi_VER_investigadores = new javax.swing.JMenuItem();
         jmi_VER_proyectos = new javax.swing.JMenuItem();
         jmi_VER_publicaciones = new javax.swing.JMenuItem();
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 650, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 424, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Ver", jPanel2);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 650, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 424, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab2", jPanel3);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jTabbedPane1)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jTabbedPane1)
+        );
 
         javax.swing.GroupLayout jd_carrerasLayout = new javax.swing.GroupLayout(jd_carreras.getContentPane());
         jd_carreras.getContentPane().setLayout(jd_carrerasLayout);
         jd_carrerasLayout.setHorizontalGroup(
             jd_carrerasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jd_carrerasLayout.setVerticalGroup(
             jd_carrerasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jd_investigadoresLayout = new javax.swing.GroupLayout(jd_investigadores.getContentPane());
@@ -100,30 +141,40 @@ public class Main extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Base Datos de Investigadores");
 
-        jMenu1.setText("File");
+        jm_FILE.setText("File");
 
         jmi_FILE_abrir.setText("Abrir");
-        jMenu1.add(jmi_FILE_abrir);
+        jm_FILE.add(jmi_FILE_abrir);
 
         jmi_FILE_guardar.setText("Guardar");
-        jMenu1.add(jmi_FILE_guardar);
+        jm_FILE.add(jmi_FILE_guardar);
 
         jmi_FILE_close.setText("Close");
-        jMenu1.add(jmi_FILE_close);
-        jMenu1.add(jSeparator1);
+        jm_FILE.add(jmi_FILE_close);
+        jm_FILE.add(jSeparator1);
 
         jmi_FILE_exit.setText("Exit");
-        jMenu1.add(jmi_FILE_exit);
+        jm_FILE.add(jmi_FILE_exit);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(jm_FILE);
 
-        jmi_VER_carreras.setText("Ver");
+        jm_VER.setText("Ver");
 
-        jMenuItem5.setText("Carreras");
-        jmi_VER_carreras.add(jMenuItem5);
+        jmi_VER_carreras.setText("Carreras");
+        jmi_VER_carreras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmi_VER_carrerasActionPerformed(evt);
+            }
+        });
+        jm_VER.add(jmi_VER_carreras);
 
         jmi_VER_investigadores.setText("Investigadores");
-        jmi_VER_carreras.add(jmi_VER_investigadores);
+        jmi_VER_investigadores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jmi_VER_investigadoresActionPerformed(evt);
+            }
+        });
+        jm_VER.add(jmi_VER_investigadores);
 
         jmi_VER_proyectos.setText("Proyectos");
         jmi_VER_proyectos.addActionListener(new java.awt.event.ActionListener() {
@@ -131,7 +182,7 @@ public class Main extends javax.swing.JFrame {
                 jmi_VER_proyectosActionPerformed(evt);
             }
         });
-        jmi_VER_carreras.add(jmi_VER_proyectos);
+        jm_VER.add(jmi_VER_proyectos);
 
         jmi_VER_publicaciones.setText("Publicaciones");
         jmi_VER_publicaciones.addActionListener(new java.awt.event.ActionListener() {
@@ -139,9 +190,9 @@ public class Main extends javax.swing.JFrame {
                 jmi_VER_publicacionesActionPerformed(evt);
             }
         });
-        jmi_VER_carreras.add(jmi_VER_publicaciones);
+        jm_VER.add(jmi_VER_publicaciones);
 
-        jMenuBar1.add(jmi_VER_carreras);
+        jMenuBar1.add(jm_VER);
 
         setJMenuBar(jMenuBar1);
 
@@ -160,12 +211,32 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jmi_VER_proyectosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmi_VER_proyectosActionPerformed
-        // TODO add your handling code here:
+        jd_proyectos.pack();
+        jd_proyectos.setModal(true);
+        jd_proyectos.setLocationRelativeTo(this);
+        jd_proyectos.setVisible(true);
     }//GEN-LAST:event_jmi_VER_proyectosActionPerformed
 
     private void jmi_VER_publicacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmi_VER_publicacionesActionPerformed
-        // TODO add your handling code here:
+        jd_publicaciones.pack();
+        jd_publicaciones.setModal(true);
+        jd_publicaciones.setLocationRelativeTo(this);
+        jd_publicaciones.setVisible(true);
     }//GEN-LAST:event_jmi_VER_publicacionesActionPerformed
+
+    private void jmi_VER_carrerasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmi_VER_carrerasActionPerformed
+        jd_carreras.pack();
+        jd_carreras.setModal(true);
+        jd_carreras.setLocationRelativeTo(this);
+        jd_carreras.setVisible(true);
+    }//GEN-LAST:event_jmi_VER_carrerasActionPerformed
+
+    private void jmi_VER_investigadoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmi_VER_investigadoresActionPerformed
+        jd_investigadores.pack();
+        jd_investigadores.setModal(true);
+        jd_investigadores.setLocationRelativeTo(this);
+        jd_investigadores.setVisible(true);
+    }//GEN-LAST:event_jmi_VER_investigadoresActionPerformed
 
     /**
      * @param args the command line arguments
@@ -204,19 +275,23 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDialog jDialog2;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JDialog jd_carreras;
     private javax.swing.JDialog jd_investigadores;
     private javax.swing.JDialog jd_proyectos;
     private javax.swing.JDialog jd_publicaciones;
+    private javax.swing.JMenu jm_FILE;
+    private javax.swing.JMenu jm_VER;
     private javax.swing.JMenuItem jmi_FILE_abrir;
     private javax.swing.JMenuItem jmi_FILE_close;
     private javax.swing.JMenuItem jmi_FILE_exit;
     private javax.swing.JMenuItem jmi_FILE_guardar;
-    private javax.swing.JMenu jmi_VER_carreras;
+    private javax.swing.JMenuItem jmi_VER_carreras;
     private javax.swing.JMenuItem jmi_VER_investigadores;
     private javax.swing.JMenuItem jmi_VER_proyectos;
     private javax.swing.JMenuItem jmi_VER_publicaciones;
