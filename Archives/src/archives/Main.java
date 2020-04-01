@@ -1306,7 +1306,12 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jtp_carrerasStateChanged
 
     private void bt_CARRERA_agregar_addMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CARRERA_agregar_addMouseClicked
-        // TODO add your handling code here:
+        String estado = "";
+        
+        Carrera carr = new Carrera(Integer.parseInt(tf_CARRERA_agregar_codigo.getText()), tf_CARRERA_agregar_nombre.getText(), estado);
+        
+        
+        AdminArchivo ar = new AdminArchivo("carreras.atc");
     }//GEN-LAST:event_bt_CARRERA_agregar_addMouseClicked
 
     /**

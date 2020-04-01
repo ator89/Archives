@@ -23,7 +23,13 @@ public class AdminArchivo {
     ArrayList<Carrera> listaCarrera = new ArrayList();
     ArrayList<Proyecto> listaProyecto = new ArrayList();
     ArrayList<Publicacion> listaPublicacion = new ArrayList();
-     
+    
+    private File archivo=null;
+    
+    public AdminArchivo(String path){
+        archivo= new File(path);
+    }
+    
     //crear un flujo sobre archivo determinado
     public static void crearFileAlumno(File archivo) throws IOException{
         if(archivo.exists() && !archivo.isFile()){
