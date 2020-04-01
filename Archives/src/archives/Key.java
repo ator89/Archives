@@ -12,7 +12,7 @@ public class Key {
 
     public Key() {
         key = -1;
-        position = -1;
+        position = 0;
     }
 
     public Key(int key, int position) {
