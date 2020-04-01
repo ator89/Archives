@@ -8,14 +8,14 @@ package archives;
 public class Publicacion {
     
     private int codigo;
-    private Proyecto codigoProyecto;
+    private int codigoProyecto;
     private String fecha;
     private String tipoPublicacion; //revista, conferencia
 
     public Publicacion() {
     }
 
-    public Publicacion(int codigo, Proyecto codigoProyecto, String fecha, String tipoPublicacion) {
+    public Publicacion(int codigo, int codigoProyecto, String fecha, String tipoPublicacion) {
         this.codigo = codigo;
         this.codigoProyecto = codigoProyecto;
         this.fecha = fecha;
@@ -30,11 +30,11 @@ public class Publicacion {
         this.codigo = codigo;
     }
 
-    public Proyecto getCodigoProyecto() {
+    public int getCodigoProyecto() {
         return codigoProyecto;
     }
 
-    public void setCodigoProyecto(Proyecto codigoProyecto) {
+    public void setCodigoProyecto(int codigoProyecto) {
         this.codigoProyecto = codigoProyecto;
     }
 
