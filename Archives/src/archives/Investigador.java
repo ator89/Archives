@@ -10,13 +10,13 @@ public class Investigador {
     private int codigo;
     private String nombre;
     private String fechaIngreso;
-    private Carrera carrera;
+    private String carrera;
     private boolean activo;
 
     public Investigador() {
     }
 
-    public Investigador(int codigo, String nombre, String fechaIngreso, Carrera carrera, boolean activo) {
+    public Investigador(int codigo, String nombre, String fechaIngreso, String carrera, boolean activo) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.fechaIngreso = fechaIngreso;
@@ -48,11 +48,11 @@ public class Investigador {
         this.fechaIngreso = fechaIngreso;
     }
 
-    public Carrera getCarrera() {
+    public String getCarrera() {
         return carrera;
     }
 
-    public void setCarrera(Carrera carrera) {
+    public void setCarrera(String carrera) {
         this.carrera = carrera;
     }
 

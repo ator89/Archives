@@ -8,7 +8,7 @@ package archives;
 public class Proyecto {
     private int codigo;
     private String tema;
-    private Investigador codigoInvestigador;
+    private int codigoInvestigador;
     private String fechaInicio;
     private String fechaFinal;
     private String estado; //iniciado, enviado, publicado, rechazado
@@ -16,7 +16,7 @@ public class Proyecto {
     public Proyecto() {
     }
 
-    public Proyecto(int codigo, String tema, Investigador codigoInvestigador, String fechaInicio, String fechaFinal, String estado) {
+    public Proyecto(int codigo, String tema, int codigoInvestigador, String fechaInicio, String fechaFinal, String estado) {
         this.codigo = codigo;
         this.tema = tema;
         this.codigoInvestigador = codigoInvestigador;
@@ -41,11 +41,11 @@ public class Proyecto {
         this.tema = tema;
     }
 
-    public Investigador getCodigoInvestigador() {
+    public int getCodigoInvestigador() {
         return codigoInvestigador;
     }
 
-    public void setCodigoInvestigador(Investigador codigoInvestigador) {
+    public void setCodigoInvestigador(int codigoInvestigador) {
         this.codigoInvestigador = codigoInvestigador;
     }
 

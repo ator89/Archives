@@ -25,21 +25,30 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jtp_VER_carreras" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jtp_carreras" min="-2" pref="562" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jtp_VER_carreras" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jtp_carreras" min="-2" pref="433" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Container class="javax.swing.JTabbedPane" name="jtp_VER_carreras">
+            <Container class="javax.swing.JTabbedPane" name="jtp_carreras">
+              <Events>
+                <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="jtp_carrerasStateChanged"/>
+              </Events>
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="jPanel_VER_CARRERA_agregar">
+                <Container class="javax.swing.JPanel" name="jPanel_CARRERA_agregar">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                       <JTabbedPaneConstraints tabName="Agregar">
@@ -51,54 +60,31 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
                               <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="61" max="32767" attributes="0"/>
-                              <Component id="jScrollPane2" min="-2" pref="196" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                              <EmptySpace pref="122" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="199" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jScrollPane2" min="-2" pref="324" max="-2" attributes="0"/>
-                                  <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace pref="60" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="50" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
-                      <AuxValues>
-                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                      </AuxValues>
-
-                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                      <SubComponents>
-                        <Component class="javax.swing.JList" name="jList2">
-                          <Properties>
-                            <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                              <StringArray count="5">
-                                <StringItem index="0" value="Item 1"/>
-                                <StringItem index="1" value="Item 2"/>
-                                <StringItem index="2" value="Item 3"/>
-                                <StringItem index="3" value="Item 4"/>
-                                <StringItem index="4" value="Item 5"/>
-                              </StringArray>
-                            </Property>
-                          </Properties>
-                          <AuxValues>
-                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                          </AuxValues>
-                        </Component>
-                      </SubComponents>
-                    </Container>
                     <Container class="javax.swing.JPanel" name="jPanel6">
 
                       <Layout>
@@ -107,29 +93,29 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="bt_VER_CARRERA_agregar_add" min="-2" max="-2" attributes="0"/>
+                                      <Component id="bt_CARRERA_agregar_add" min="-2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Group type="102" attributes="0">
                                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="tf_VER_CARRERA_agregar_nombre" max="32767" attributes="0"/>
+                                              <Component id="tf_CARRERA_agregar_nombre" max="32767" attributes="0"/>
                                           </Group>
                                           <Group type="102" attributes="0">
                                               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="tf_VER_CARRERA_agregar_codigo" min="-2" pref="219" max="-2" attributes="0"/>
+                                              <Component id="tf_CARRERA_agregar_codigo" min="-2" pref="219" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="rbt_VER_CARRERA_agregar_inactivo" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="rbt_VER_CARRERA_agregar_activo" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rbt_CARRERA_agregar_inactivo" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rbt_CARRERA_agregar_activo" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="21" max="32767" attributes="0"/>
+                                  <EmptySpace pref="15" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -139,23 +125,23 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="tf_VER_CARRERA_agregar_codigo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="tf_CARRERA_agregar_codigo" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="tf_VER_CARRERA_agregar_nombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="tf_CARRERA_agregar_nombre" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="rbt_VER_CARRERA_agregar_activo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbt_CARRERA_agregar_activo" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="rbt_VER_CARRERA_agregar_inactivo" min="-2" max="-2" attributes="0"/>
+                                  <Component id="rbt_CARRERA_agregar_inactivo" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="bt_VER_CARRERA_agregar_add" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="21" max="32767" attributes="0"/>
+                                  <Component id="bt_CARRERA_agregar_add" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="106" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -176,7 +162,7 @@
                             <Property name="text" type="java.lang.String" value="Estado:"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="rbt_VER_CARRERA_agregar_activo">
+                        <Component class="javax.swing.JRadioButton" name="rbt_CARRERA_agregar_activo">
                           <Properties>
                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                               <ComponentRef name="btg_VER_CARR_agregar_estado"/>
@@ -184,7 +170,7 @@
                             <Property name="text" type="java.lang.String" value="Activo"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="rbt_VER_CARRERA_agregar_inactivo">
+                        <Component class="javax.swing.JRadioButton" name="rbt_CARRERA_agregar_inactivo">
                           <Properties>
                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                               <ComponentRef name="btg_VER_CARR_agregar_estado"/>
@@ -193,198 +179,31 @@
                             <Property name="text" type="java.lang.String" value="Inactivo"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="tf_VER_CARRERA_agregar_codigo">
+                        <Component class="javax.swing.JTextField" name="tf_CARRERA_agregar_codigo">
                         </Component>
-                        <Component class="javax.swing.JTextField" name="tf_VER_CARRERA_agregar_nombre">
+                        <Component class="javax.swing.JTextField" name="tf_CARRERA_agregar_nombre">
                         </Component>
-                        <Component class="javax.swing.JButton" name="bt_VER_CARRERA_agregar_add">
+                        <Component class="javax.swing.JButton" name="bt_CARRERA_agregar_add">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Agregar"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt_CARRERA_agregar_addMouseClicked"/>
+                          </Events>
                         </Component>
                       </SubComponents>
                     </Container>
+                    <Component class="javax.swing.JLabel" name="jLabel37">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Lucida Grande" size="14" style="1"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Agregar una carrera"/>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="jPanel_VER_CARRERA_modificar">
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                      <JTabbedPaneConstraints tabName="Modificar">
-                        <Property name="tabTitle" type="java.lang.String" value="Modificar"/>
-                      </JTabbedPaneConstraints>
-                    </Constraint>
-                  </Constraints>
-
-                  <Layout>
-                    <DimensionLayout dim="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                              <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="61" max="32767" attributes="0"/>
-                              <Component id="jScrollPane3" min="-2" pref="196" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                    </DimensionLayout>
-                    <DimensionLayout dim="1">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jScrollPane3" alignment="0" min="-2" pref="324" max="-2" attributes="0"/>
-                                  <Component id="jPanel7" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace pref="60" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                    </DimensionLayout>
-                  </Layout>
-                  <SubComponents>
-                    <Container class="javax.swing.JScrollPane" name="jScrollPane3">
-                      <AuxValues>
-                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-                      </AuxValues>
-
-                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                      <SubComponents>
-                        <Component class="javax.swing.JList" name="jList3">
-                          <Properties>
-                            <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                              <StringArray count="5">
-                                <StringItem index="0" value="Item 1"/>
-                                <StringItem index="1" value="Item 2"/>
-                                <StringItem index="2" value="Item 3"/>
-                                <StringItem index="3" value="Item 4"/>
-                                <StringItem index="4" value="Item 5"/>
-                              </StringArray>
-                            </Property>
-                          </Properties>
-                          <AuxValues>
-                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                          </AuxValues>
-                        </Component>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel7">
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="bt_VER_CARRERA_modificar_edit" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="bt_VER_CARRERA_modificar_save" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="tf_VER_CARRERA_modificar_nombre" max="32767" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="tf_VER_CARRERA_modificar_codigo" min="-2" pref="219" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="rbt_VER_CARRERA_modificar_inactivo" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="rbt_VER_CARRERA_modificar_activo" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace pref="21" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="tf_VER_CARRERA_modificar_codigo" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="tf_VER_CARRERA_modificar_nombre" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="rbt_VER_CARRERA_modificar_activo" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="rbt_VER_CARRERA_modificar_inactivo" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="bt_VER_CARRERA_modificar_save" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="bt_VER_CARRERA_modificar_edit" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace pref="21" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Component class="javax.swing.JLabel" name="jLabel4">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="C&#xf3;digo:"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel5">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Nombre:"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel6">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Estado:"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JRadioButton" name="rbt_VER_CARRERA_modificar_activo">
-                          <Properties>
-                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                              <ComponentRef name="btg_VER_CARR_edit_estado"/>
-                            </Property>
-                            <Property name="text" type="java.lang.String" value="Activo"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JRadioButton" name="rbt_VER_CARRERA_modificar_inactivo">
-                          <Properties>
-                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                              <ComponentRef name="btg_VER_CARR_edit_estado"/>
-                            </Property>
-                            <Property name="text" type="java.lang.String" value="Inactivo"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JTextField" name="tf_VER_CARRERA_modificar_codigo">
-                        </Component>
-                        <Component class="javax.swing.JTextField" name="tf_VER_CARRERA_modificar_nombre">
-                        </Component>
-                        <Component class="javax.swing.JButton" name="bt_VER_CARRERA_modificar_save">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Guardar"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="bt_VER_CARRERA_modificar_edit">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Editar"/>
-                          </Properties>
-                        </Component>
-                      </SubComponents>
-                    </Container>
-                  </SubComponents>
-                </Container>
-                <Container class="javax.swing.JPanel" name="jPanel_VER_CARRERA_ver">
+                <Container class="javax.swing.JPanel" name="jPanel_CARRERA_ver">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                       <JTabbedPaneConstraints tabName="Ver">
@@ -396,19 +215,29 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
-                              <Component id="jScrollPane4" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="114" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace pref="31" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jScrollPane4" min="-2" pref="490" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="200" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
-                              <Component id="jScrollPane4" min="-2" pref="289" max="-2" attributes="0"/>
-                              <EmptySpace pref="81" max="32767" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="18" max="32767" attributes="0"/>
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jScrollPane4" min="-2" pref="306" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -421,7 +250,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                       <SubComponents>
-                        <Component class="javax.swing.JTable" name="jtbl_VER_CARRERA_listar">
+                        <Component class="javax.swing.JTable" name="jtbl_CARRERA_listar">
                           <Properties>
                             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                               <Table columnCount="3" rowCount="4">
@@ -434,13 +263,21 @@
                         </Component>
                       </SubComponents>
                     </Container>
+                    <Component class="javax.swing.JLabel" name="jLabel6">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Lucida Grande" size="14" style="1"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Listado de Carreras"/>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="jPanel_VER_CARRERA_eliminar">
+                <Container class="javax.swing.JPanel" name="jPanel_CARRERA_buscar">
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                      <JTabbedPaneConstraints tabName="Eliminar">
-                        <Property name="tabTitle" type="java.lang.String" value="Eliminar"/>
+                      <JTabbedPaneConstraints tabName="Buscar">
+                        <Property name="tabTitle" type="java.lang.String" value="Buscar"/>
                       </JTabbedPaneConstraints>
                     </Constraint>
                   </Constraints>
@@ -448,24 +285,44 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="bt_VER_CARRERA_eliminar_delete" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane5" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="tf_CARRERA_buscar" min="-2" pref="182" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="bt_CARRERA_buscar" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jScrollPane5" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
+                                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace pref="114" max="32767" attributes="0"/>
+                              <EmptySpace pref="44" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="bt_CARRERA_buscar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tf_CARRERA_buscar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="jScrollPane5" min="-2" pref="289" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="bt_VER_CARRERA_eliminar_delete" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="34" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -478,7 +335,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                       <SubComponents>
-                        <Component class="javax.swing.JTable" name="jtbl_VER_CARRERA_eliminar">
+                        <Component class="javax.swing.JTable" name="jtbl_CARRERA_buscar">
                           <Properties>
                             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                               <Table columnCount="3" rowCount="4">
@@ -491,9 +348,24 @@
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Component class="javax.swing.JButton" name="bt_VER_CARRERA_eliminar_delete">
+                    <Component class="javax.swing.JButton" name="bt_CARRERA_buscar">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Eliminar"/>
+                        <Property name="text" type="java.lang.String" value="Buscar"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tf_CARRERA_buscar">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="C&#xf3;digo de Carrera:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel5">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Lucida Grande" size="14" style="1"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="B&#xfa;squeda de Carrera por # de c&#xf3;digo"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -912,7 +784,7 @@
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_INV_modificar_activo">
                           <Properties>
                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                              <ComponentRef name="btg_VER_INV_edit_estado"/>
+                              <ComponentRef name="default"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Activo"/>
                           </Properties>
@@ -920,7 +792,7 @@
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_INV_modificar_inactivo">
                           <Properties>
                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                              <ComponentRef name="btg_VER_INV_edit_estado"/>
+                              <ComponentRef name="default"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Inactivo"/>
                           </Properties>
@@ -1542,7 +1414,7 @@
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PROY_modificar_iniciado">
                           <Properties>
                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                              <ComponentRef name="btg_VER_PROY_edit_estado"/>
+                              <ComponentRef name="default"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Iniciado"/>
                           </Properties>
@@ -1550,7 +1422,7 @@
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PROY_modificar_enviado">
                           <Properties>
                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                              <ComponentRef name="btg_VER_PROY_edit_estado"/>
+                              <ComponentRef name="default"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Enviado"/>
                           </Properties>
@@ -1558,7 +1430,7 @@
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PROY_modificar_publicado">
                           <Properties>
                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                              <ComponentRef name="btg_VER_PROY_edit_estado"/>
+                              <ComponentRef name="default"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Publicado"/>
                           </Properties>
@@ -1566,7 +1438,7 @@
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PROY_modificar_rechazado">
                           <Properties>
                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                              <ComponentRef name="btg_VER_PROY_edit_estado"/>
+                              <ComponentRef name="default"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Rechazado"/>
                           </Properties>
@@ -2140,7 +2012,7 @@
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PUB_modificar_publicacion">
                           <Properties>
                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                              <ComponentRef name="btg_VER_PUB_edit_estado"/>
+                              <ComponentRef name="default"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Publicaci&#xf3;n"/>
                           </Properties>
@@ -2148,7 +2020,7 @@
                         <Component class="javax.swing.JRadioButton" name="rbt_VER_PUB_modificar_revista">
                           <Properties>
                             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                              <ComponentRef name="btg_VER_PUB_edit_estado"/>
+                              <ComponentRef name="default"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Revista"/>
                           </Properties>
@@ -2338,14 +2210,6 @@
     <Component class="javax.swing.ButtonGroup" name="btg_VER_PROY_agregar_estado">
     </Component>
     <Component class="javax.swing.ButtonGroup" name="btg_VER_PUB_agregar_estado">
-    </Component>
-    <Component class="javax.swing.ButtonGroup" name="btg_VER_CARR_edit_estado">
-    </Component>
-    <Component class="javax.swing.ButtonGroup" name="btg_VER_INV_edit_estado">
-    </Component>
-    <Component class="javax.swing.ButtonGroup" name="btg_VER_PROY_edit_estado">
-    </Component>
-    <Component class="javax.swing.ButtonGroup" name="btg_VER_PUB_edit_estado">
     </Component>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>

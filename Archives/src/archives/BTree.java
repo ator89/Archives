@@ -39,11 +39,14 @@ public class BTree implements Serializable{
     //Función para buscar por llave
     public Key search(BTreeNode Nodo, Key value) {
 
+        //smallest index
         int i = 1;
+        
         while (i <= Nodo.getNum_hijos() && value.getKey()> Nodo.getLlaves()[i - 1].getKey()) {
             i++;
         }
 
+        //Regresa la llave si la encuentra
         if (i <= Nodo.getNum_hijos() && value.getKey() == Nodo.getLlaves()[i - 1].getKey()) {
             return Nodo.getLlaves()[i - 1];
         }
@@ -51,13 +54,15 @@ public class BTree implements Serializable{
         if (!Nodo.isHoja()) {
             return search(Nodo.getHijos()[i - 1], value);
         }
-        System.out.println("no lo encontre");
+        
+        System.out.println("No se encuentra el archivo");
         return null;
     }
 
     //Función split cuando llega al máximo (3)
     public void split(BTreeNode parentNode, int childIndex, BTreeNode newChild) {
 
+        //Create new node
         BTreeNode z = new BTreeNode(0, 0, null, true);
         
         z.Hoja = newChild.Hoja;

@@ -9,12 +9,12 @@ public class Carrera {
     
     private int codigo;
     private String nombre;
-    private boolean estado;
+    private String estado;
 
     public Carrera() {
     }
 
-    public Carrera(int codigo, String nombre, boolean estado) {
+    public Carrera(int codigo, String nombre, String estado) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.estado = estado;
@@ -36,11 +36,11 @@ public class Carrera {
         this.nombre = nombre;
     }
 
-    public boolean isEstado() {
+    public String isEstado() {
         return estado;
     }
 
-    public void setEstado(boolean estado) {
+    public void setEstado(String estado) {
         this.estado = estado;
     }
     
