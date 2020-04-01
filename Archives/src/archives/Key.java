@@ -11,6 +11,8 @@ public class Key {
     private int position; //RRN
 
     public Key() {
+        key = -1;
+        position = -1;
     }
 
     public Key(int key, int position) {
