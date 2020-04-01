@@ -52,7 +52,7 @@ public class Main extends javax.swing.JFrame {
         jd_investigadores = new javax.swing.JDialog();
         jPanel_VER_investigadores = new javax.swing.JPanel();
         jtp_VER_investigadores = new javax.swing.JTabbedPane();
-        jPanel_VER_INVT_add = new javax.swing.JPanel();
+        jPanel_INVT_add = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -65,33 +65,16 @@ public class Main extends javax.swing.JFrame {
         rbt_VER_INV_agregar_activo = new javax.swing.JRadioButton();
         rbt_VER_INV_agregar_inactivo = new javax.swing.JRadioButton();
         bt_VER_INV_agregar_add = new javax.swing.JButton();
-        jSpinner1 = new javax.swing.JSpinner();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTree1 = new javax.swing.JTree();
-        jPanel_VER_INVT_edit = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        tf_VER_INV_modificar_codigo = new javax.swing.JTextField();
-        tf_VER_INV_modificar_nombre = new javax.swing.JTextField();
-        jcb_VER_INV_modificar_carrera = new javax.swing.JComboBox<>();
-        rbt_VER_INV_modificar_activo = new javax.swing.JRadioButton();
-        rbt_VER_INV_modificar_inactivo = new javax.swing.JRadioButton();
-        bt_VER_INV_modificar_save = new javax.swing.JButton();
-        bt_VER_INV_modificar_edit = new javax.swing.JButton();
-        jSpinner2 = new javax.swing.JSpinner();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
-        jPanel_VER_INVT_view = new javax.swing.JPanel();
-        jScrollPane7 = new javax.swing.JScrollPane();
-        jtbl_VER_INVT_listar = new javax.swing.JTable();
-        jPanel_VER_INVT_delete = new javax.swing.JPanel();
+        jTextField1 = new javax.swing.JTextField();
+        jPanel_INVT_view = new javax.swing.JPanel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        jtbl_INVT_listar = new javax.swing.JTable();
+        jPanel_INVT_delete = new javax.swing.JPanel();
         jScrollPane8 = new javax.swing.JScrollPane();
-        jtbl_VER_INVT_borrar = new javax.swing.JTable();
-        bt_VER_INV_eliminar_delete = new javax.swing.JButton();
+        jtbl_INVT_borrar = new javax.swing.JTable();
+        bt_INV_buscar = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
         jd_proyectos = new javax.swing.JDialog();
         jPanel_VER_proyectos = new javax.swing.JPanel();
         jtp_VER_proyectos = new javax.swing.JTabbedPane();
@@ -110,42 +93,21 @@ public class Main extends javax.swing.JFrame {
         tf_VER_PROY_agregar_codigo = new javax.swing.JTextField();
         tf_VER_PROY_agregar_tema = new javax.swing.JTextField();
         jcb_VER_PROY_agregar_carrera = new javax.swing.JComboBox<>();
-        jSpinner3 = new javax.swing.JSpinner();
-        jSpinner4 = new javax.swing.JSpinner();
         bt_VER_PROY_agregar_add = new javax.swing.JButton();
-        jScrollPane16 = new javax.swing.JScrollPane();
-        jList7 = new javax.swing.JList<>();
-        jPanel_VER_PROY_edit = new javax.swing.JPanel();
-        jPanel11 = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        rbt_VER_PROY_modificar_iniciado = new javax.swing.JRadioButton();
-        rbt_VER_PROY_modificar_enviado = new javax.swing.JRadioButton();
-        rbt_VER_PROY_modificar_publicado = new javax.swing.JRadioButton();
-        rbt_VER_PROY_modificar_rechazado = new javax.swing.JRadioButton();
-        tf_VER_PROY_modificar_codigo = new javax.swing.JTextField();
-        tf_VER_PROY_modificar_tema = new javax.swing.JTextField();
-        jcb_VER_PROY_modificar_carrera = new javax.swing.JComboBox<>();
-        jSpinner5 = new javax.swing.JSpinner();
-        jSpinner6 = new javax.swing.JSpinner();
-        bt_VER_PROY_modificar_save = new javax.swing.JButton();
-        jScrollPane11 = new javax.swing.JScrollPane();
-        jList4 = new javax.swing.JList<>();
-        bt_VER_PROY_modificar_edit = new javax.swing.JButton();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
         jPanel_VER_PROY_view = new javax.swing.JPanel();
-        jScrollPane9 = new javax.swing.JScrollPane();
-        jtbl_VER_PROY_listar = new javax.swing.JTable();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        jtbl_PROY_ver = new javax.swing.JTable();
         jPanel_VER_PROY_delete = new javax.swing.JPanel();
         jScrollPane10 = new javax.swing.JScrollPane();
-        jtbl_VER_PROY_borrar = new javax.swing.JTable();
-        bt_VER_PROY_borrar_delete = new javax.swing.JButton();
+        jtbl_PROY_buscar = new javax.swing.JTable();
+        bt_PROY_buscar = new javax.swing.JButton();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
         jd_publicaciones = new javax.swing.JDialog();
         jPanel_VER_publicaciones = new javax.swing.JPanel();
-        jtp_VER_publicaciones = new javax.swing.JTabbedPane();
+        jtp_publicaciones = new javax.swing.JTabbedPane();
         jPanel_VER_PUB_add = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
         jLabel29 = new javax.swing.JLabel();
@@ -154,35 +116,19 @@ public class Main extends javax.swing.JFrame {
         jLabel32 = new javax.swing.JLabel();
         tf_VER_PUB_agregar_codigo = new javax.swing.JTextField();
         jcb_VER_PUB_agregar_proyecto = new javax.swing.JComboBox<>();
-        jSpinner7 = new javax.swing.JSpinner();
         rbt_VER_PUB_agregar_publicacion = new javax.swing.JRadioButton();
         rbt_VER_PUB_agregar_revista = new javax.swing.JRadioButton();
         bt_VER_PUB_agregar_add = new javax.swing.JButton();
-        jScrollPane12 = new javax.swing.JScrollPane();
-        jList5 = new javax.swing.JList<>();
-        jPanel_VER_PUB_edit = new javax.swing.JPanel();
-        jPanel18 = new javax.swing.JPanel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        tf_VER_PUB_modificar_codigo = new javax.swing.JTextField();
-        jcb_VER_PUB_modificar_proyecto = new javax.swing.JComboBox<>();
-        jSpinner8 = new javax.swing.JSpinner();
-        rbt_VER_PUB_modificar_publicacion = new javax.swing.JRadioButton();
-        rbt_VER_PUB_modificar_revista = new javax.swing.JRadioButton();
-        bt_VER_PUB_agregar_save = new javax.swing.JButton();
-        jScrollPane13 = new javax.swing.JScrollPane();
-        jList6 = new javax.swing.JList<>();
-        bt_VER_PUB_agregar_edit = new javax.swing.JButton();
+        jTextField7 = new javax.swing.JTextField();
         jPanel_VER_PUB_view = new javax.swing.JPanel();
-        jScrollPane14 = new javax.swing.JScrollPane();
-        jtbl_VER_PUB_listar = new javax.swing.JTable();
+        jScrollPane16 = new javax.swing.JScrollPane();
+        jtbl_PUB_listar = new javax.swing.JTable();
         jPanel_VER_PUB_delete = new javax.swing.JPanel();
         jScrollPane15 = new javax.swing.JScrollPane();
-        jtbl_VER_PUB_borrar = new javax.swing.JTable();
+        jtbl_PUB_buscar = new javax.swing.JTable();
         bt_VER_PUB_borrar_delete = new javax.swing.JButton();
-        jDialog2 = new javax.swing.JDialog();
+        jLabel14 = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
         btg_VER_CARR_agregar_estado = new javax.swing.ButtonGroup();
         btg_VER_INV_agregar_estado = new javax.swing.ButtonGroup();
         btg_VER_PROY_agregar_estado = new javax.swing.ButtonGroup();
@@ -510,15 +456,14 @@ public class Main extends javax.swing.JFrame {
                                 .addComponent(jLabel7)
                                 .addGap(18, 18, 18)
                                 .addComponent(tf_VER_INV_agregar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel9)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel10)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(jcb_VER_INV_agregar_carrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField1))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel10)
+                                .addGap(18, 18, 18)
+                                .addComponent(jcb_VER_INV_agregar_carrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(39, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -537,10 +482,11 @@ public class Main extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel9)
-                            .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel10))
-                    .addComponent(jcb_VER_INV_agregar_carrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(34, 34, 34))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jcb_VER_INV_agregar_carrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel10)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
@@ -548,222 +494,137 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(rbt_VER_INV_agregar_inactivo))
                 .addGap(18, 18, 18)
                 .addComponent(bt_VER_INV_agregar_add)
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
 
-        jScrollPane1.setViewportView(jTree1);
-
-        javax.swing.GroupLayout jPanel_VER_INVT_addLayout = new javax.swing.GroupLayout(jPanel_VER_INVT_add);
-        jPanel_VER_INVT_add.setLayout(jPanel_VER_INVT_addLayout);
-        jPanel_VER_INVT_addLayout.setHorizontalGroup(
-            jPanel_VER_INVT_addLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_VER_INVT_addLayout.createSequentialGroup()
-                .addGap(54, 54, 54)
+        javax.swing.GroupLayout jPanel_INVT_addLayout = new javax.swing.GroupLayout(jPanel_INVT_add);
+        jPanel_INVT_add.setLayout(jPanel_INVT_addLayout);
+        jPanel_INVT_addLayout.setHorizontalGroup(
+            jPanel_INVT_addLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_INVT_addLayout.createSequentialGroup()
+                .addGap(146, 146, 146)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addContainerGap(146, Short.MAX_VALUE))
         );
-        jPanel_VER_INVT_addLayout.setVerticalGroup(
-            jPanel_VER_INVT_addLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_VER_INVT_addLayout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addGroup(jPanel_VER_INVT_addLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(80, Short.MAX_VALUE))
-        );
-
-        jtp_VER_investigadores.addTab("Agregar", jPanel_VER_INVT_add);
-
-        jLabel12.setText("Código:");
-
-        jLabel13.setText("Nombre:");
-
-        jLabel14.setText("Fecha de Ingreso:");
-
-        jLabel15.setText("Carrera");
-
-        jLabel16.setText("Estado:");
-
-        jcb_VER_INV_modificar_carrera.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar..." }));
-
-        rbt_VER_INV_modificar_activo.setText("Activo");
-
-        rbt_VER_INV_modificar_inactivo.setText("Inactivo");
-
-        bt_VER_INV_modificar_save.setText("Guardar");
-
-        bt_VER_INV_modificar_edit.setText("Editar");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel16)
-                        .addGap(18, 18, 18)
-                        .addComponent(rbt_VER_INV_modificar_activo)
-                        .addGap(18, 18, 18)
-                        .addComponent(rbt_VER_INV_modificar_inactivo))
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel2Layout.createSequentialGroup()
-                            .addComponent(bt_VER_INV_modificar_edit)
-                            .addGap(18, 18, 18)
-                            .addComponent(bt_VER_INV_modificar_save))
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel13)
-                                .addGap(18, 18, 18)
-                                .addComponent(tf_VER_INV_modificar_nombre))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addGap(18, 18, 18)
-                                .addComponent(tf_VER_INV_modificar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel14)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel15)
-                                .addGap(18, 18, 18)
-                                .addComponent(jcb_VER_INV_modificar_carrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(39, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel12)
-                            .addComponent(tf_VER_INV_modificar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel13)
-                            .addComponent(tf_VER_INV_modificar_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel14)
-                            .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel15))
-                    .addComponent(jcb_VER_INV_modificar_carrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
-                    .addComponent(rbt_VER_INV_modificar_activo)
-                    .addComponent(rbt_VER_INV_modificar_inactivo))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bt_VER_INV_modificar_save)
-                    .addComponent(bt_VER_INV_modificar_edit))
-                .addContainerGap(43, Short.MAX_VALUE))
-        );
-
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane6.setViewportView(jList1);
-
-        javax.swing.GroupLayout jPanel_VER_INVT_editLayout = new javax.swing.GroupLayout(jPanel_VER_INVT_edit);
-        jPanel_VER_INVT_edit.setLayout(jPanel_VER_INVT_editLayout);
-        jPanel_VER_INVT_editLayout.setHorizontalGroup(
-            jPanel_VER_INVT_editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_VER_INVT_editLayout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(47, Short.MAX_VALUE))
-        );
-        jPanel_VER_INVT_editLayout.setVerticalGroup(
-            jPanel_VER_INVT_editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_VER_INVT_editLayout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addGroup(jPanel_VER_INVT_editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane6)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(86, Short.MAX_VALUE))
-        );
-
-        jtp_VER_investigadores.addTab("Modificar", jPanel_VER_INVT_edit);
-
-        jtbl_VER_INVT_listar.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane7.setViewportView(jtbl_VER_INVT_listar);
-
-        javax.swing.GroupLayout jPanel_VER_INVT_viewLayout = new javax.swing.GroupLayout(jPanel_VER_INVT_view);
-        jPanel_VER_INVT_view.setLayout(jPanel_VER_INVT_viewLayout);
-        jPanel_VER_INVT_viewLayout.setHorizontalGroup(
-            jPanel_VER_INVT_viewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_VER_INVT_viewLayout.createSequentialGroup()
-                .addGap(97, 97, 97)
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(121, Short.MAX_VALUE))
-        );
-        jPanel_VER_INVT_viewLayout.setVerticalGroup(
-            jPanel_VER_INVT_viewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_VER_INVT_viewLayout.createSequentialGroup()
+        jPanel_INVT_addLayout.setVerticalGroup(
+            jPanel_INVT_addLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_INVT_addLayout.createSequentialGroup()
                 .addGap(42, 42, 42)
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(68, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(85, Short.MAX_VALUE))
         );
 
-        jtp_VER_investigadores.addTab("Listar", jPanel_VER_INVT_view);
+        jtp_VER_investigadores.addTab("Agregar", jPanel_INVT_add);
 
-        jtbl_VER_INVT_borrar.setModel(new javax.swing.table.DefaultTableModel(
+        jtbl_INVT_listar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Nombre", "Codigo Inv.", "Codigo Carrera.", "Estado", "Fecha Ingreso"
             }
-        ));
-        jScrollPane8.setViewportView(jtbl_VER_INVT_borrar);
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
 
-        bt_VER_INV_eliminar_delete.setText("Eliminar");
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
 
-        javax.swing.GroupLayout jPanel_VER_INVT_deleteLayout = new javax.swing.GroupLayout(jPanel_VER_INVT_delete);
-        jPanel_VER_INVT_delete.setLayout(jPanel_VER_INVT_deleteLayout);
-        jPanel_VER_INVT_deleteLayout.setHorizontalGroup(
-            jPanel_VER_INVT_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_VER_INVT_deleteLayout.createSequentialGroup()
-                .addGap(101, 101, 101)
-                .addGroup(jPanel_VER_INVT_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(bt_VER_INV_eliminar_delete)
-                    .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane11.setViewportView(jtbl_INVT_listar);
+
+        javax.swing.GroupLayout jPanel_INVT_viewLayout = new javax.swing.GroupLayout(jPanel_INVT_view);
+        jPanel_INVT_view.setLayout(jPanel_INVT_viewLayout);
+        jPanel_INVT_viewLayout.setHorizontalGroup(
+            jPanel_INVT_viewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 672, Short.MAX_VALUE)
+            .addGroup(jPanel_INVT_viewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel_INVT_viewLayout.createSequentialGroup()
+                    .addGap(109, 109, 109)
+                    .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(109, Short.MAX_VALUE)))
+        );
+        jPanel_INVT_viewLayout.setVerticalGroup(
+            jPanel_INVT_viewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 426, Short.MAX_VALUE)
+            .addGroup(jPanel_INVT_viewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel_INVT_viewLayout.createSequentialGroup()
+                    .addGap(44, 44, 44)
+                    .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(44, Short.MAX_VALUE)))
+        );
+
+        jtp_VER_investigadores.addTab("Listar", jPanel_INVT_view);
+
+        jtbl_INVT_borrar.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Codigo Inv.", "Codigo Carrera.", "Estado", "Fecha Ingreso"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane8.setViewportView(jtbl_INVT_borrar);
+
+        bt_INV_buscar.setText("Buscar");
+
+        jLabel12.setText("Buscar");
+
+        javax.swing.GroupLayout jPanel_INVT_deleteLayout = new javax.swing.GroupLayout(jPanel_INVT_delete);
+        jPanel_INVT_delete.setLayout(jPanel_INVT_deleteLayout);
+        jPanel_INVT_deleteLayout.setHorizontalGroup(
+            jPanel_INVT_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_INVT_deleteLayout.createSequentialGroup()
+                .addGroup(jPanel_INVT_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel_INVT_deleteLayout.createSequentialGroup()
+                        .addGap(191, 191, 191)
+                        .addComponent(jLabel12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(bt_INV_buscar))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_INVT_deleteLayout.createSequentialGroup()
+                        .addGap(101, 101, 101)
+                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(117, Short.MAX_VALUE))
         );
-        jPanel_VER_INVT_deleteLayout.setVerticalGroup(
-            jPanel_VER_INVT_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_VER_INVT_deleteLayout.createSequentialGroup()
+        jPanel_INVT_deleteLayout.setVerticalGroup(
+            jPanel_INVT_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel_INVT_deleteLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(bt_VER_INV_eliminar_delete)
+                .addGroup(jPanel_INVT_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bt_INV_buscar)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        jtp_VER_investigadores.addTab("Eliminar", jPanel_VER_INVT_delete);
+        jtp_VER_investigadores.addTab("Buscar", jPanel_INVT_delete);
 
         javax.swing.GroupLayout jPanel_VER_investigadoresLayout = new javax.swing.GroupLayout(jPanel_VER_investigadores);
         jPanel_VER_investigadores.setLayout(jPanel_VER_investigadoresLayout);
@@ -832,9 +693,6 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jLabel19))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jcb_VER_PROY_agregar_carrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(bt_VER_PROY_agregar_add)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -847,7 +705,11 @@ public class Main extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(rbt_VER_PROY_agregar_enviado))
                             .addComponent(tf_VER_PROY_agregar_codigo)
-                            .addComponent(tf_VER_PROY_agregar_tema, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE))))
+                            .addComponent(tf_VER_PROY_agregar_tema, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)))
+                    .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jcb_VER_PROY_agregar_carrera, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
@@ -868,11 +730,11 @@ public class Main extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel20)
-                    .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel21)
-                    .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel22)
@@ -888,226 +750,109 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap(32, Short.MAX_VALUE))
         );
 
-        jList7.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane16.setViewportView(jList7);
-
         javax.swing.GroupLayout jPanel_VER_PROY_addLayout = new javax.swing.GroupLayout(jPanel_VER_PROY_add);
         jPanel_VER_PROY_add.setLayout(jPanel_VER_PROY_addLayout);
         jPanel_VER_PROY_addLayout.setHorizontalGroup(
             jPanel_VER_PROY_addLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_VER_PROY_addLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_VER_PROY_addLayout.createSequentialGroup()
+                .addContainerGap(159, Short.MAX_VALUE)
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addGap(138, 138, 138))
         );
         jPanel_VER_PROY_addLayout.setVerticalGroup(
             jPanel_VER_PROY_addLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel_VER_PROY_addLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(jPanel_VER_PROY_addLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addGap(28, 28, 28)
+                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         jtp_VER_proyectos.addTab("Agregar", jPanel_VER_PROY_add);
 
-        jLabel23.setText("Código:");
-
-        jLabel24.setText("Tema:");
-
-        jLabel25.setText("Investigador:");
-
-        jLabel26.setText("Fecha Inicio:");
-
-        jLabel27.setText("Fecha Fin:");
-
-        jLabel28.setText("Estado:");
-
-        rbt_VER_PROY_modificar_iniciado.setText("Iniciado");
-
-        rbt_VER_PROY_modificar_enviado.setText("Enviado");
-
-        rbt_VER_PROY_modificar_publicado.setText("Publicado");
-
-        rbt_VER_PROY_modificar_rechazado.setText("Rechazado");
-
-        jcb_VER_PROY_modificar_carrera.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione un investigador..." }));
-
-        bt_VER_PROY_modificar_save.setText("Guardar");
-
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel28)
-                    .addComponent(jLabel27)
-                    .addComponent(jLabel26)
-                    .addComponent(jLabel23)
-                    .addComponent(jLabel24)
-                    .addComponent(jLabel25))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jcb_VER_PROY_modificar_carrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(bt_VER_PROY_modificar_save)
-                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel11Layout.createSequentialGroup()
-                                .addComponent(rbt_VER_PROY_modificar_publicado)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(rbt_VER_PROY_modificar_rechazado))
-                            .addGroup(jPanel11Layout.createSequentialGroup()
-                                .addComponent(rbt_VER_PROY_modificar_iniciado)
-                                .addGap(18, 18, 18)
-                                .addComponent(rbt_VER_PROY_modificar_enviado))
-                            .addComponent(tf_VER_PROY_modificar_codigo)
-                            .addComponent(tf_VER_PROY_modificar_tema, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE))))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel23)
-                    .addComponent(tf_VER_PROY_modificar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel24)
-                    .addComponent(tf_VER_PROY_modificar_tema, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel25)
-                    .addComponent(jcb_VER_PROY_modificar_carrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel26)
-                    .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel27)
-                    .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel28)
-                    .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(rbt_VER_PROY_modificar_iniciado)
-                        .addComponent(rbt_VER_PROY_modificar_enviado)))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(rbt_VER_PROY_modificar_publicado)
-                    .addComponent(rbt_VER_PROY_modificar_rechazado))
-                .addGap(18, 18, 18)
-                .addComponent(bt_VER_PROY_modificar_save)
-                .addContainerGap(32, Short.MAX_VALUE))
-        );
-
-        jList4.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane11.setViewportView(jList4);
-
-        bt_VER_PROY_modificar_edit.setText("Editar");
-
-        javax.swing.GroupLayout jPanel_VER_PROY_editLayout = new javax.swing.GroupLayout(jPanel_VER_PROY_edit);
-        jPanel_VER_PROY_edit.setLayout(jPanel_VER_PROY_editLayout);
-        jPanel_VER_PROY_editLayout.setHorizontalGroup(
-            jPanel_VER_PROY_editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_VER_PROY_editLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel_VER_PROY_editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel_VER_PROY_editLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
-                        .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(49, 49, 49))
-                    .addGroup(jPanel_VER_PROY_editLayout.createSequentialGroup()
-                        .addGap(89, 89, 89)
-                        .addComponent(bt_VER_PROY_modificar_edit)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
-        jPanel_VER_PROY_editLayout.setVerticalGroup(
-            jPanel_VER_PROY_editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_VER_PROY_editLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(jPanel_VER_PROY_editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel_VER_PROY_editLayout.createSequentialGroup()
-                        .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(26, 26, 26)
-                        .addComponent(bt_VER_PROY_modificar_edit)))
-                .addContainerGap(31, Short.MAX_VALUE))
-        );
-
-        jtp_VER_proyectos.addTab("Modificar", jPanel_VER_PROY_edit);
-
-        jtbl_VER_PROY_listar.setModel(new javax.swing.table.DefaultTableModel(
+        jtbl_PROY_ver.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Código Proyecto", "Nombre - Tema", "Fecha Inicio", "Fecha Fin", "Codigo Investigador", "Estado"
             }
-        ));
-        jScrollPane9.setViewportView(jtbl_VER_PROY_listar);
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane13.setViewportView(jtbl_PROY_ver);
 
         javax.swing.GroupLayout jPanel_VER_PROY_viewLayout = new javax.swing.GroupLayout(jPanel_VER_PROY_view);
         jPanel_VER_PROY_view.setLayout(jPanel_VER_PROY_viewLayout);
         jPanel_VER_PROY_viewLayout.setHorizontalGroup(
             jPanel_VER_PROY_viewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel_VER_PROY_viewLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 693, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addGap(41, 41, 41)
+                .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 647, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         jPanel_VER_PROY_viewLayout.setVerticalGroup(
             jPanel_VER_PROY_viewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel_VER_PROY_viewLayout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(79, Short.MAX_VALUE))
+                .addGap(51, 51, 51)
+                .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(51, Short.MAX_VALUE))
         );
 
         jtp_VER_proyectos.addTab("Listar", jPanel_VER_PROY_view);
 
-        jtbl_VER_PROY_borrar.setModel(new javax.swing.table.DefaultTableModel(
+        jtbl_PROY_buscar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Código Proyecto", "Nombre - Tema", "Fecha Inicio", "Fecha Fin", "Codigo Investigador", "Estado"
             }
-        ));
-        jScrollPane10.setViewportView(jtbl_VER_PROY_borrar);
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
 
-        bt_VER_PROY_borrar_delete.setText("Eliminar");
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane10.setViewportView(jtbl_PROY_buscar);
+
+        bt_PROY_buscar.setText("Buscar");
+
+        jLabel13.setText("Código de Proyecto");
 
         javax.swing.GroupLayout jPanel_VER_PROY_deleteLayout = new javax.swing.GroupLayout(jPanel_VER_PROY_delete);
         jPanel_VER_PROY_delete.setLayout(jPanel_VER_PROY_deleteLayout);
         jPanel_VER_PROY_deleteLayout.setHorizontalGroup(
             jPanel_VER_PROY_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel_VER_PROY_deleteLayout.createSequentialGroup()
-                .addGap(464, 464, 464)
-                .addComponent(bt_VER_PROY_borrar_delete)
+                .addGap(133, 133, 133)
+                .addComponent(jLabel13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bt_PROY_buscar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_VER_PROY_deleteLayout.createSequentialGroup()
                 .addContainerGap(38, Short.MAX_VALUE)
@@ -1120,11 +865,14 @@ public class Main extends javax.swing.JFrame {
                 .addGap(41, 41, 41)
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(bt_VER_PROY_borrar_delete)
+                .addGroup(jPanel_VER_PROY_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bt_PROY_buscar)
+                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
 
-        jtp_VER_proyectos.addTab("Borrar", jPanel_VER_PROY_delete);
+        jtp_VER_proyectos.addTab("Buscar", jPanel_VER_PROY_delete);
 
         javax.swing.GroupLayout jPanel_VER_proyectosLayout = new javax.swing.GroupLayout(jPanel_VER_proyectos);
         jPanel_VER_proyectos.setLayout(jPanel_VER_proyectosLayout);
@@ -1185,15 +933,15 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(jLabel30, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel29, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tf_VER_PUB_agregar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tf_VER_PUB_agregar_codigo, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE)
                             .addComponent(jcb_VER_PUB_agregar_proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jSpinner7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel17Layout.createSequentialGroup()
                                 .addGap(6, 6, 6)
                                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(rbt_VER_PUB_agregar_revista)
-                                    .addComponent(rbt_VER_PUB_agregar_publicacion))))))
+                                    .addComponent(rbt_VER_PUB_agregar_publicacion)))
+                            .addComponent(jTextField7))))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
         jPanel17Layout.setVerticalGroup(
@@ -1208,10 +956,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jLabel30)
                     .addComponent(jcb_VER_PUB_agregar_proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel31)
-                    .addComponent(jSpinner7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel32)
                     .addComponent(rbt_VER_PUB_agregar_publicacion))
@@ -1222,190 +970,97 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap(11, Short.MAX_VALUE))
         );
 
-        jList5.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane12.setViewportView(jList5);
-
         javax.swing.GroupLayout jPanel_VER_PUB_addLayout = new javax.swing.GroupLayout(jPanel_VER_PUB_add);
         jPanel_VER_PUB_add.setLayout(jPanel_VER_PUB_addLayout);
         jPanel_VER_PUB_addLayout.setHorizontalGroup(
             jPanel_VER_PUB_addLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel_VER_PUB_addLayout.createSequentialGroup()
-                .addGap(78, 78, 78)
+                .addGap(191, 191, 191)
                 .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
-                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(115, Short.MAX_VALUE))
+                .addContainerGap(196, Short.MAX_VALUE))
         );
         jPanel_VER_PUB_addLayout.setVerticalGroup(
             jPanel_VER_PUB_addLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel_VER_PUB_addLayout.createSequentialGroup()
-                .addGap(81, 81, 81)
-                .addGroup(jPanel_VER_PUB_addLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(79, 79, 79)
+                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(96, Short.MAX_VALUE))
         );
 
-        jtp_VER_publicaciones.addTab("Agregar", jPanel_VER_PUB_add);
+        jtp_publicaciones.addTab("Agregar", jPanel_VER_PUB_add);
 
-        jLabel33.setText("Código:");
-
-        jLabel34.setText("Proyecto:");
-
-        jLabel35.setText("Fecha:");
-
-        jLabel36.setText("Tipo:");
-
-        jcb_VER_PUB_modificar_proyecto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        rbt_VER_PUB_modificar_publicacion.setText("Publicación");
-
-        rbt_VER_PUB_modificar_revista.setText("Revista");
-
-        bt_VER_PUB_agregar_save.setText("Guardar");
-
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
-        jPanel18.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(bt_VER_PUB_agregar_save)
-                    .addGroup(jPanel18Layout.createSequentialGroup()
-                        .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel36, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel35, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel34, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel33, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tf_VER_PUB_modificar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jcb_VER_PUB_modificar_proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jSpinner8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel18Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(rbt_VER_PUB_modificar_revista)
-                                    .addComponent(rbt_VER_PUB_modificar_publicacion))))))
-                .addContainerGap(17, Short.MAX_VALUE))
-        );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel33)
-                    .addComponent(tf_VER_PUB_modificar_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel34)
-                    .addComponent(jcb_VER_PUB_modificar_proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel35)
-                    .addComponent(jSpinner8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel36)
-                    .addComponent(rbt_VER_PUB_modificar_publicacion))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(rbt_VER_PUB_modificar_revista)
-                .addGap(18, 18, 18)
-                .addComponent(bt_VER_PUB_agregar_save)
-                .addContainerGap(11, Short.MAX_VALUE))
-        );
-
-        jList6.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane13.setViewportView(jList6);
-
-        bt_VER_PUB_agregar_edit.setText("Editar");
-
-        javax.swing.GroupLayout jPanel_VER_PUB_editLayout = new javax.swing.GroupLayout(jPanel_VER_PUB_edit);
-        jPanel_VER_PUB_edit.setLayout(jPanel_VER_PUB_editLayout);
-        jPanel_VER_PUB_editLayout.setHorizontalGroup(
-            jPanel_VER_PUB_editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_VER_PUB_editLayout.createSequentialGroup()
-                .addGap(61, 61, 61)
-                .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel_VER_PUB_editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel_VER_PUB_editLayout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel_VER_PUB_editLayout.createSequentialGroup()
-                        .addGap(105, 105, 105)
-                        .addComponent(bt_VER_PUB_agregar_edit)))
-                .addContainerGap(93, Short.MAX_VALUE))
-        );
-        jPanel_VER_PUB_editLayout.setVerticalGroup(
-            jPanel_VER_PUB_editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_VER_PUB_editLayout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addGroup(jPanel_VER_PUB_editLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel_VER_PUB_editLayout.createSequentialGroup()
-                        .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(bt_VER_PUB_agregar_edit))
-                    .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(103, Short.MAX_VALUE))
-        );
-
-        jtp_VER_publicaciones.addTab("Modificar", jPanel_VER_PUB_edit);
-
-        jtbl_VER_PUB_listar.setModel(new javax.swing.table.DefaultTableModel(
+        jtbl_PUB_listar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Código Publicación", "Código Proyecto", "Fecha Publicación", "Revista o Conferencia"
             }
-        ));
-        jScrollPane14.setViewportView(jtbl_VER_PUB_listar);
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane16.setViewportView(jtbl_PUB_listar);
 
         javax.swing.GroupLayout jPanel_VER_PUB_viewLayout = new javax.swing.GroupLayout(jPanel_VER_PUB_view);
         jPanel_VER_PUB_view.setLayout(jPanel_VER_PUB_viewLayout);
         jPanel_VER_PUB_viewLayout.setHorizontalGroup(
             jPanel_VER_PUB_viewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel_VER_PUB_viewLayout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 639, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addGap(31, 31, 31)
+                .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 659, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(32, Short.MAX_VALUE))
         );
         jPanel_VER_PUB_viewLayout.setVerticalGroup(
             jPanel_VER_PUB_viewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel_VER_PUB_viewLayout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 368, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addGap(48, 48, 48)
+                .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(48, Short.MAX_VALUE))
         );
 
-        jtp_VER_publicaciones.addTab("Listar", jPanel_VER_PUB_view);
+        jtp_publicaciones.addTab("Listar", jPanel_VER_PUB_view);
 
-        jtbl_VER_PUB_borrar.setModel(new javax.swing.table.DefaultTableModel(
+        jtbl_PUB_buscar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Código Publicación", "Código Proyecto", "Fecha Publicación", "Revista o Conferencia"
             }
-        ));
-        jScrollPane15.setViewportView(jtbl_VER_PUB_borrar);
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
 
-        bt_VER_PUB_borrar_delete.setText("Eliminar");
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane15.setViewportView(jtbl_PUB_buscar);
+
+        bt_VER_PUB_borrar_delete.setText("Buscar");
+
+        jLabel14.setText("Buscar Publicación:");
 
         javax.swing.GroupLayout jPanel_VER_PUB_deleteLayout = new javax.swing.GroupLayout(jPanel_VER_PUB_delete);
         jPanel_VER_PUB_delete.setLayout(jPanel_VER_PUB_deleteLayout);
@@ -1416,7 +1071,11 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 659, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(25, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_VER_PUB_deleteLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(163, 163, 163)
+                .addComponent(jLabel14)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(bt_VER_PUB_borrar_delete)
                 .addGap(51, 51, 51))
         );
@@ -1426,21 +1085,24 @@ public class Main extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(bt_VER_PUB_borrar_delete)
+                .addGroup(jPanel_VER_PUB_deleteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bt_VER_PUB_borrar_delete)
+                    .addComponent(jLabel14)
+                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(19, Short.MAX_VALUE))
         );
 
-        jtp_VER_publicaciones.addTab("Eliminar", jPanel_VER_PUB_delete);
+        jtp_publicaciones.addTab("Buscar", jPanel_VER_PUB_delete);
 
         javax.swing.GroupLayout jPanel_VER_publicacionesLayout = new javax.swing.GroupLayout(jPanel_VER_publicaciones);
         jPanel_VER_publicaciones.setLayout(jPanel_VER_publicacionesLayout);
         jPanel_VER_publicacionesLayout.setHorizontalGroup(
             jPanel_VER_publicacionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jtp_VER_publicaciones)
+            .addComponent(jtp_publicaciones)
         );
         jPanel_VER_publicacionesLayout.setVerticalGroup(
             jPanel_VER_publicacionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jtp_VER_publicaciones)
+            .addComponent(jtp_publicaciones)
         );
 
         javax.swing.GroupLayout jd_publicacionesLayout = new javax.swing.GroupLayout(jd_publicaciones.getContentPane());
@@ -1452,17 +1114,6 @@ public class Main extends javax.swing.JFrame {
         jd_publicacionesLayout.setVerticalGroup(
             jd_publicacionesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel_VER_publicaciones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jDialog2Layout = new javax.swing.GroupLayout(jDialog2.getContentPane());
-        jDialog2.getContentPane().setLayout(jDialog2Layout);
-        jDialog2Layout.setHorizontalGroup(
-            jDialog2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        jDialog2Layout.setVerticalGroup(
-            jDialog2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -1696,17 +1347,11 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bt_CARRERA_agregar_add;
     private javax.swing.JButton bt_CARRERA_buscar;
+    private javax.swing.JButton bt_INV_buscar;
+    private javax.swing.JButton bt_PROY_buscar;
     private javax.swing.JButton bt_VER_INV_agregar_add;
-    private javax.swing.JButton bt_VER_INV_eliminar_delete;
-    private javax.swing.JButton bt_VER_INV_modificar_edit;
-    private javax.swing.JButton bt_VER_INV_modificar_save;
     private javax.swing.JButton bt_VER_PROY_agregar_add;
-    private javax.swing.JButton bt_VER_PROY_borrar_delete;
-    private javax.swing.JButton bt_VER_PROY_modificar_edit;
-    private javax.swing.JButton bt_VER_PROY_modificar_save;
     private javax.swing.JButton bt_VER_PUB_agregar_add;
-    private javax.swing.JButton bt_VER_PUB_agregar_edit;
-    private javax.swing.JButton bt_VER_PUB_agregar_save;
     private javax.swing.JButton bt_VER_PUB_borrar_delete;
     private javax.swing.JButton bt_carreras;
     private javax.swing.JButton bt_investigadores;
@@ -1716,15 +1361,12 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.ButtonGroup btg_VER_INV_agregar_estado;
     private javax.swing.ButtonGroup btg_VER_PROY_agregar_estado;
     private javax.swing.ButtonGroup btg_VER_PUB_agregar_estado;
-    private javax.swing.JDialog jDialog2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
@@ -1732,21 +1374,11 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1754,68 +1386,46 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JList<String> jList1;
-    private javax.swing.JList<String> jList4;
-    private javax.swing.JList<String> jList5;
-    private javax.swing.JList<String> jList6;
-    private javax.swing.JList<String> jList7;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel_CARRERA_agregar;
     private javax.swing.JPanel jPanel_CARRERA_buscar;
     private javax.swing.JPanel jPanel_CARRERA_ver;
-    private javax.swing.JPanel jPanel_VER_INVT_add;
-    private javax.swing.JPanel jPanel_VER_INVT_delete;
-    private javax.swing.JPanel jPanel_VER_INVT_edit;
-    private javax.swing.JPanel jPanel_VER_INVT_view;
+    private javax.swing.JPanel jPanel_INVT_add;
+    private javax.swing.JPanel jPanel_INVT_delete;
+    private javax.swing.JPanel jPanel_INVT_view;
     private javax.swing.JPanel jPanel_VER_PROY_add;
     private javax.swing.JPanel jPanel_VER_PROY_delete;
-    private javax.swing.JPanel jPanel_VER_PROY_edit;
     private javax.swing.JPanel jPanel_VER_PROY_view;
     private javax.swing.JPanel jPanel_VER_PUB_add;
     private javax.swing.JPanel jPanel_VER_PUB_delete;
-    private javax.swing.JPanel jPanel_VER_PUB_edit;
     private javax.swing.JPanel jPanel_VER_PUB_view;
     private javax.swing.JPanel jPanel_VER_carreras;
     private javax.swing.JPanel jPanel_VER_investigadores;
     private javax.swing.JPanel jPanel_VER_proyectos;
     private javax.swing.JPanel jPanel_VER_publicaciones;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane11;
-    private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane13;
-    private javax.swing.JScrollPane jScrollPane14;
     private javax.swing.JScrollPane jScrollPane15;
     private javax.swing.JScrollPane jScrollPane16;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
-    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JPopupMenu.Separator jSeparator1;
-    private javax.swing.JSpinner jSpinner1;
-    private javax.swing.JSpinner jSpinner2;
-    private javax.swing.JSpinner jSpinner3;
-    private javax.swing.JSpinner jSpinner4;
-    private javax.swing.JSpinner jSpinner5;
-    private javax.swing.JSpinner jSpinner6;
-    private javax.swing.JSpinner jSpinner7;
-    private javax.swing.JSpinner jSpinner8;
-    private javax.swing.JTree jTree1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
     private javax.swing.JComboBox<String> jcb_VER_INV_agregar_carrera;
-    private javax.swing.JComboBox<String> jcb_VER_INV_modificar_carrera;
     private javax.swing.JComboBox<String> jcb_VER_PROY_agregar_carrera;
-    private javax.swing.JComboBox<String> jcb_VER_PROY_modificar_carrera;
     private javax.swing.JComboBox<String> jcb_VER_PUB_agregar_proyecto;
-    private javax.swing.JComboBox<String> jcb_VER_PUB_modificar_proyecto;
     private javax.swing.JDialog jd_carreras;
     private javax.swing.JDialog jd_investigadores;
     private javax.swing.JDialog jd_proyectos;
@@ -1832,47 +1442,34 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenuItem jmi_VER_publicaciones;
     private javax.swing.JTable jtbl_CARRERA_buscar;
     private javax.swing.JTable jtbl_CARRERA_listar;
-    private javax.swing.JTable jtbl_VER_INVT_borrar;
-    private javax.swing.JTable jtbl_VER_INVT_listar;
-    private javax.swing.JTable jtbl_VER_PROY_borrar;
-    private javax.swing.JTable jtbl_VER_PROY_listar;
-    private javax.swing.JTable jtbl_VER_PUB_borrar;
-    private javax.swing.JTable jtbl_VER_PUB_listar;
+    private javax.swing.JTable jtbl_INVT_borrar;
+    private javax.swing.JTable jtbl_INVT_listar;
+    private javax.swing.JTable jtbl_PROY_buscar;
+    private javax.swing.JTable jtbl_PROY_ver;
+    private javax.swing.JTable jtbl_PUB_buscar;
+    private javax.swing.JTable jtbl_PUB_listar;
     private javax.swing.JTabbedPane jtp_VER_investigadores;
     private javax.swing.JTabbedPane jtp_VER_proyectos;
-    private javax.swing.JTabbedPane jtp_VER_publicaciones;
     private javax.swing.JTabbedPane jtp_carreras;
+    private javax.swing.JTabbedPane jtp_publicaciones;
     private javax.swing.JRadioButton rbt_CARRERA_agregar_activo;
     private javax.swing.JRadioButton rbt_CARRERA_agregar_inactivo;
     private javax.swing.JRadioButton rbt_VER_INV_agregar_activo;
     private javax.swing.JRadioButton rbt_VER_INV_agregar_inactivo;
-    private javax.swing.JRadioButton rbt_VER_INV_modificar_activo;
-    private javax.swing.JRadioButton rbt_VER_INV_modificar_inactivo;
     private javax.swing.JRadioButton rbt_VER_PROY_agregar_enviado;
     private javax.swing.JRadioButton rbt_VER_PROY_agregar_iniciado;
     private javax.swing.JRadioButton rbt_VER_PROY_agregar_publicado;
     private javax.swing.JRadioButton rbt_VER_PROY_agregar_rechazado;
-    private javax.swing.JRadioButton rbt_VER_PROY_modificar_enviado;
-    private javax.swing.JRadioButton rbt_VER_PROY_modificar_iniciado;
-    private javax.swing.JRadioButton rbt_VER_PROY_modificar_publicado;
-    private javax.swing.JRadioButton rbt_VER_PROY_modificar_rechazado;
     private javax.swing.JRadioButton rbt_VER_PUB_agregar_publicacion;
     private javax.swing.JRadioButton rbt_VER_PUB_agregar_revista;
-    private javax.swing.JRadioButton rbt_VER_PUB_modificar_publicacion;
-    private javax.swing.JRadioButton rbt_VER_PUB_modificar_revista;
     private javax.swing.JTextField tf_CARRERA_agregar_codigo;
     private javax.swing.JTextField tf_CARRERA_agregar_nombre;
     private javax.swing.JTextField tf_CARRERA_buscar;
     private javax.swing.JTextField tf_VER_INV_agregar_codigo;
     private javax.swing.JTextField tf_VER_INV_agregar_nombre;
-    private javax.swing.JTextField tf_VER_INV_modificar_codigo;
-    private javax.swing.JTextField tf_VER_INV_modificar_nombre;
     private javax.swing.JTextField tf_VER_PROY_agregar_codigo;
     private javax.swing.JTextField tf_VER_PROY_agregar_tema;
-    private javax.swing.JTextField tf_VER_PROY_modificar_codigo;
-    private javax.swing.JTextField tf_VER_PROY_modificar_tema;
     private javax.swing.JTextField tf_VER_PUB_agregar_codigo;
-    private javax.swing.JTextField tf_VER_PUB_modificar_codigo;
     // End of variables declaration//GEN-END:variables
 
     Carrera car;
