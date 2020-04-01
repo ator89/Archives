@@ -59,9 +59,11 @@ public class BTree implements Serializable{
     public void split(BTreeNode parentNode, int childIndex, BTreeNode newChild) {
 
         BTreeNode z = new BTreeNode(0, 0, null, true);
+        
         z.Hoja = newChild.Hoja;
         z.setNum_hijos(1);
         z.getLlaves()[0] = newChild.getLlaves()[2];
+        
         if (!newChild.Hoja) {
             z.getHijos()[0] = newChild.getHijos()[2];
             z.getHijos()[1] = newChild.getHijos()[3];
@@ -69,15 +71,18 @@ public class BTree implements Serializable{
 
         newChild.setNum_hijos(1);
         parentNode.getHijos()[childIndex] = z;
+        
         for (int j = parentNode.getNum_hijos() + 1; j >= childIndex + 1; j--) {
             parentNode.getHijos()[j] = parentNode.getHijos()[j - 1];
             parentNode.getLlaves()[j - 1] = parentNode.getLlaves()[j - 2];
         }
+        
         parentNode.getLlaves()[childIndex - 1] = newChild.getLlaves()[1];
 
         for (int i = 0; i <= parentNode.getHijos()[childIndex - 1].getNum_hijos(); i++) {
             parentNode.getHijos()[childIndex - 1].getLlaves()[i + 1] = null;
         }
+        
         parentNode.getHijos()[childIndex - 1].setNum_hijos(1);
 
         int y = parentNode.getNum_hijos() + 1;
@@ -124,7 +129,9 @@ public class BTree implements Serializable{
             raiz = nodo_temp;
             nodo_temp.setNum_hijos(0);
             nodo_temp.Hoja = false;
+            //Nuevo hijo es raiz
             nodo_temp.getHijos()[0] = r;
+        
             split(nodo_temp, 1, r);
             insert_no_full(nodo_temp, Llave);
         } else {

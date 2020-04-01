@@ -16,6 +16,7 @@ public class BTreeNode implements Serializable{
     protected Key[] llaves = new Key[3];
     protected boolean Hoja;
 
+    //Constructors
     public BTreeNode() {
     }
 
@@ -25,6 +26,8 @@ public class BTreeNode implements Serializable{
         this.root = root;
         this.Hoja = Hoja;
     }
+    
+    //Getters and setters
     public int getNum_hijos() {
         return num_hijos;
     }
@@ -72,6 +75,8 @@ public class BTreeNode implements Serializable{
     public void setHoja(boolean Hoja) {
         this.Hoja = Hoja;
     }
+    
+    //Agregar llave
     public void addLlave(Key Lla, BTreeNode nodo) {
         if (nodo.getNum_llaves() < 5) {
             llaves[nodo.num_llaves] = Lla;
@@ -80,6 +85,7 @@ public class BTreeNode implements Serializable{
         }
     }
 
+    //Agregar hijo
     public void addHijo(BTreeNode nodo) {
         if (nodo.getNum_hijos() < 5) {
             hijos[nodo.num_hijos] = nodo;
